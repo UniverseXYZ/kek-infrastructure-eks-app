@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scrape
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  template:
+    spec:
+      containers:
+      - name: main
+        image: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend:dev
+        imagePullPolicy: Always
+        command: ["/kekBackend"]
+        args: ["scrape"]
+        envFrom:
+          - configMapRef:
+              name: scrape
+          - secretRef:
+              name: scrape
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+        resources:
+          requests:
+            cpu: 250m
+            memory: 512Mi
+      serviceAccountName: default
