@@ -13,16 +13,16 @@ spec:
   validation: client
   decryption:
     provider: sops
-  # healthChecks:
-  #   - apiVersion: apps/v1
-  #     kind: Deployment
-  #     name: api
-  #     namespace: dev
-  #   - apiVersion: apps/v1
-  #     kind: Deployment
-  #     name: scrape
-  #     namespace: dev
-  #   - apiVersion: apps/v1
-  #     kind: Deployment
-  #     name: notifications
-  #     namespace: dev
+  healthChecks:
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: api
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: scrape
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: notifications
+      namespace: dev
