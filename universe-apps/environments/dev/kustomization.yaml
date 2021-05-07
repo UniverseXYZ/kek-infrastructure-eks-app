@@ -5,7 +5,7 @@ resources:
   - namespace.yaml
   - sources
   - redis
-  - api
+  # - api
   - scrape
   - notifications
 images:
