@@ -22,7 +22,7 @@ patchesJson6902:
 commonLabels:
   app: backend
   component: api
-  environment: devv2
+  environment: dev
 configMapGenerator:
   - name: api
     literals:
