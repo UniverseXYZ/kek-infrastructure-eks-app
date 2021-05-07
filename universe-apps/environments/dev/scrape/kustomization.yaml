@@ -5,6 +5,7 @@ resources:
   - secret.yaml
 patchesStrategicMerge:
   - patch-affinity.yaml
+  - patch-env.yaml
 patchesJson6902:
   - path: patch-replicas.yaml
     target:
