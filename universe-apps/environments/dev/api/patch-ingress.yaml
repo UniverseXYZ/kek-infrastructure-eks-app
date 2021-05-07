@@ -4,4 +4,4 @@ metadata:
   name: api
   annotations:
     acme.cert-manager.io/http01-ingress-class: nginx
-    external-dns.alpha.kubernetes.io/hostname: dev.api.universe.xyz
+    external-dns.alpha.kubernetes.io/hostname: dev.api.dao.universe.xyz
