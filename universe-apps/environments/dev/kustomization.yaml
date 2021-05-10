@@ -10,4 +10,4 @@ resources:
   - notifications
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
-    newTag: 4c83253
+    newTag: 610ce39
