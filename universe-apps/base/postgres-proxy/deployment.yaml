@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-proxy
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: proxy
+        image: gcr.io/google_containers/proxy-to-service:v1
+        ports:
+        - name: postgres
+          protocol: TCP
+          containerPort: 5432
+      serviceAccount: default
