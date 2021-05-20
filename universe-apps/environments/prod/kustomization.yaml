@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: prod
 resources:
   - namespace.yaml
+  - ingress-redirect-www.yaml
