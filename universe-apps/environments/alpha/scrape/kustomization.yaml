@@ -16,7 +16,7 @@ patchesJson6902:
 commonLabels:
   app: backend
   component: scrape
-  environment: alphauction 
+  environment: alpha 
 configMapGenerator:
   - name: scrape
     literals:

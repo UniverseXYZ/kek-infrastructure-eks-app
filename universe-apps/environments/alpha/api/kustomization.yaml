@@ -22,7 +22,7 @@ patchesJson6902:
 commonLabels:
   app: backend
   component: api
-  environment: alphauction 
+  environment: alpha 
 configMapGenerator:
   - name: api
     literals:

@@ -6,7 +6,7 @@ resources:
 commonLabels:
   app: backend
   component: notifications
-  environment: alphauction 
+  environment: alpha 
 configMapGenerator:
   - name: notifications
     literals:

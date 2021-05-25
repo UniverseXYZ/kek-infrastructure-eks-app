@@ -8,4 +8,4 @@ patchesStrategicMerge:
 commonLabels:
   app: backend
   component: postgres-proxy
-  environment: alphauction 
+  environment: alpha 
