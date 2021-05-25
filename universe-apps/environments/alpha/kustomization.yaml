@@ -1,0 +1,14 @@
+apiversion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: alpha
+resources:
+  - namespace.yaml
+  - sources
+  - redis
+  - api
+  - notifications
+  - postgres-proxy
+  - scrape
+images:
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
+    newTag: 2f57496

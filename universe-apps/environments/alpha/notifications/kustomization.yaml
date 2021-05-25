@@ -1,0 +1,18 @@
+apiversion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/notifications
+  - secret.yaml
+commonLabels:
+  app: backend
+  component: notifications
+  environment: alphauction 
+configMapGenerator:
+  - name: notifications
+    literals:
+      - KD_DB_HOST=alpha-universe.cotqfbtbif7j.us-east-1.rds.amazonaws.com
+      - KD_DB_PORT=5432
+      - KD_DB_SSLMODE=disable
+      - KD_DB_DBNAME=kekdao
+      - KD_DB_USER=kekdao
+      - KD_LOGGING=*=trace
