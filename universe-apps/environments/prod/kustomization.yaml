@@ -4,3 +4,12 @@ namespace: prod
 resources:
   - namespace.yaml
   - ingress-redirect-www.yaml
+  - sources
+  - redis
+  - api
+  - notifications
+  - postgres-proxy
+  - scrape
+images:
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
+    newTag: 2f57496

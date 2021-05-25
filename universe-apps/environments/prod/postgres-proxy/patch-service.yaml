@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-proxy
+spec:
+  externalName: prod-universe.cotqfbtbif7j.us-east-1.rds.amazonaws.com
