@@ -2,7 +2,7 @@
 
 ## Deploying new versions
 
-There are several environments in [universe-apps/environments](universe-apps/environments). To release a new versions, you must update the image `newTag` field in the environment's `kustomize.yaml` file. For example, to update the `dev` environment, you must edit [universe-apps/environments/kustomize.yaml](universe-apps/environments/kustomize.yaml):
+There are several environments in [universe-apps/environments](universe-apps/environments). To release a new versions, you must update the image `newTag` field in the environment's `kustomize.yaml` file. For example, to update the `dev` environment, you must edit [universe-apps/environments/dev/kustomize.yaml](universe-apps/environments/dev/kustomize.yaml):
 
 ``` yaml
 apiversion: kustomize.config.k8s.io/v1beta1
