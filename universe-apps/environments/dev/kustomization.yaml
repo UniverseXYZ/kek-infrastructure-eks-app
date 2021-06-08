@@ -11,4 +11,4 @@ resources:
   - postgres-proxy
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
-    newTag: 2f57496
+    newTag: e91a8ed
