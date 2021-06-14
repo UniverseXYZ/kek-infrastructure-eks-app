@@ -24,7 +24,7 @@ commonLabels:
   component: universeapp-backend
   environment: dev
 configMapGenerator:
-  - name: api
+  - name: universeapp-backend
     literals:
       - APP_PORT=3000
       - AWS_BUCKET_NAME=universeapp-assets-dev
