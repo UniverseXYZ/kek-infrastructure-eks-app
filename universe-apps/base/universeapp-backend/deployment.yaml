@@ -54,7 +54,7 @@ spec:
           failureThreshold: 3
         securityContext:
           allowPrivilegeEscalation: false
-          readOnlyRootFilesystem: true
+          readOnlyRootFilesystem: false
         resources:
           requests:
             cpu: 250m
