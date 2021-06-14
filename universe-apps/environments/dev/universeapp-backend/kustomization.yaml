@@ -1,0 +1,38 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universeapp-backend
+  - secret.yaml
+patchesStrategicMerge:
+  - patch-ingress.yaml
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-hostname.yaml
+    target:
+      group: networking.k8s.io
+      kind: Ingress
+      name: universeapp-backend
+      version: v1beta1
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universeapp-backend
+      version: v1
+commonLabels:
+  app: backend
+  component: universeapp-backend
+  environment: dev
+configMapGenerator:
+  - name: api
+    literals:
+      - APP_PORT=3000
+      - AWS_BUCKET_NAME=universeapp-assets-dev
+      - DB_DATABASE_NAME=kekdao
+      - DB_HOST=dev-universe.cotqfbtbif7j.us-east-1.rds.amazonaws.com
+      - DB_PORT=5432
+      - DB_USERNAME=kekdao
+      - ETHEREUM_NETWORK=rinkeby
+      - FRONTEND_DOMAIN=https://dev.universe.xyz
+      - INFURA_PROJECT_ID=25763b5ba15644a8b3079d3ee755bce5
+      - PATH_PREFIX=dev
