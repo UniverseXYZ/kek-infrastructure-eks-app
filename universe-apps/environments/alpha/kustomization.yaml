@@ -11,4 +11,4 @@ resources:
   - scrape
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
-    newTag: b0af13a
+    newTag: 94c79d6
