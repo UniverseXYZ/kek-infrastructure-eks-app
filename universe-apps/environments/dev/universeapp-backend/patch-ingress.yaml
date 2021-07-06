@@ -5,3 +5,5 @@ metadata:
   annotations:
     acme.cert-manager.io/http01-ingress-class: nginx
     external-dns.alpha.kubernetes.io/hostname: dev.api.universe.xyz
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "*"
