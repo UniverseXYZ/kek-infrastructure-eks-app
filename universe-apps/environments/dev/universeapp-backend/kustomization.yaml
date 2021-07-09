@@ -37,3 +37,4 @@ configMapGenerator:
       - ETHEREUM_NETWORK=rinkeby
       - FRONTEND_DOMAIN=https://dev.universe.xyz
       - INFURA_PROJECT_ID=25763b5ba15644a8b3079d3ee755bce5
+      - UNIVERSE_UNIVERSAL_NFT_ADDRESS=0x7ccEeF55EefA853728d59b46bfB99aD65dA19d44
