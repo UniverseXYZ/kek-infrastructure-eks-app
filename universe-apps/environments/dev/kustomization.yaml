@@ -14,4 +14,4 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: "2149fad"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
-    newTag: "fb52eb9"
+    newTag: "8a80c7f"
