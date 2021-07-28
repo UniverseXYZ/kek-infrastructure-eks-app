@@ -12,6 +12,6 @@ resources:
   - universeapp-backend
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
-    newTag: "2149fad"
+    newTag: "553f321"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
     newTag: "42658e8"
