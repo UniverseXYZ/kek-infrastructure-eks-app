@@ -10,5 +10,5 @@ metadata:
     nginx.ingress.kubernetes.io/affinity: cookie
     nginx.ingress.kubernetes.io/affinity-mode: persistent
     nginx.ingress.kubernetes.io/session-cookie-name: DEVXYZCOOKIE
-    nginx.ingress.kubernetes.io/proxy-body-size: "10m"
-    nginx.org/client-max-body-size: "10m"
+    nginx.ingress.kubernetes.io/proxy-body-size: "50m"
+    nginx.org/client-max-body-size: "50m"
