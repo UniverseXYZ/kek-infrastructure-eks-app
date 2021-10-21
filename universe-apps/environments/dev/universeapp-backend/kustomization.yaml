@@ -35,6 +35,7 @@ configMapGenerator:
       - DB_PORT=5432
       - DB_USERNAME=kekdao
       - ETHEREUM_NETWORK=rinkeby
-      - FRONTEND_DOMAIN=https://dev.universe.xyz
       - INFURA_PROJECT_ID=25763b5ba15644a8b3079d3ee755bce5
-      - UNIVERSE_UNIVERSAL_NFT_ADDRESS=0x1eb634A2719781a33686E6AeBAc05F240Ef2a3ae
+      - MORALIS_APPLICATION_ID=qWxPrLYp3Ug7ky6eyh7LIvVg2oF3q7GXNCU8z7nw
+      - MORALIS_SERVER_URL=https://6ynjucpsxnva.usemoralis.com:2053/server
+      - MORALIS_MASTER_KEY=JdTFna2xp50nxsrFCNolNci9rTtSZzDrneMlrVKN
