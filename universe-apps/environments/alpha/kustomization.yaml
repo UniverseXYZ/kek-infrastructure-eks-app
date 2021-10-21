@@ -9,6 +9,9 @@ resources:
   - notifications
   - postgres-proxy
   - scrape
+  - universeapp-backend
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: a3d7340
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
+    newTag: "0e4f24d"
