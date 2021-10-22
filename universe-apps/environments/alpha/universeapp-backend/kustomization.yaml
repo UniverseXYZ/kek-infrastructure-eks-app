@@ -35,6 +35,4 @@ configMapGenerator:
       - DB_PORT=5432
       - DB_USERNAME=kekdao
       - ETHEREUM_NETWORK=mainnet
-      - FRONTEND_DOMAIN=https://alpha.universe.xyz
       - INFURA_PROJECT_ID=25763b5ba15644a8b3079d3ee755bce5
-      - UNIVERSE_UNIVERSAL_NFT_ADDRESS=0x1eb634A2719781a33686E6AeBAc05F240Ef2a3ae
