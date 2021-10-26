@@ -36,3 +36,6 @@ configMapGenerator:
       - DB_USERNAME=kekdao
       - ETHEREUM_NETWORK=mainnet
       - INFURA_PROJECT_ID=25763b5ba15644a8b3079d3ee755bce5
+      - MORALIS_APPLICATION_ID=IDUfhgcQFACblDaJDbcWmFtrwRjelXXqokkFnSgH
+      - MORALIS_SERVER_URL=https://geeepbacb8mi.usemoralis.com:2053/server
+      - MORALIS_MASTER_KEY=dd0Jcooz3r88r6JNIt5VH42jobAmO2WfVv1ijmrt
