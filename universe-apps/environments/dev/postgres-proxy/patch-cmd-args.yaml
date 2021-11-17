@@ -8,3 +8,5 @@ spec:
       containers:
       - name: proxy
         args: ["tcp", "5432", "postgres-proxy.dev"]
+      - name: proxy
+        args: ["tcp", "5432", "postgres-proxy-nft.dev"]

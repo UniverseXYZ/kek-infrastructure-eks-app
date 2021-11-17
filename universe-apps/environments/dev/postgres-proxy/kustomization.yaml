@@ -5,6 +5,8 @@ resources:
 patchesStrategicMerge:
   - patch-cmd-args.yaml
   - patch-service.yaml
+  - patch-service-postgres-nft.yaml
+  - service-postgres-nft.yaml
 commonLabels:
   app: backend
   component: postgres-proxy
