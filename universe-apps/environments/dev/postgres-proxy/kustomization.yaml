@@ -2,11 +2,9 @@ apiversion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ../../../base/postgres-proxy
-  - service-postgres-nft.yaml
 patchesStrategicMerge:
   - patch-cmd-args.yaml
   - patch-service.yaml
-  - patch-service-postgres-nft.yaml
 commonLabels:
   app: backend
   component: postgres-proxy
