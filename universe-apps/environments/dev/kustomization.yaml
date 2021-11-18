@@ -9,6 +9,7 @@ resources:
   - scrape
   - notifications
   - postgres-proxy
+  - postgres-proxy-nft
   - universeapp-backend
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
