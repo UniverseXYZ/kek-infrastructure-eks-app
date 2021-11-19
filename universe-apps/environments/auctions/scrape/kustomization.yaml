@@ -1,0 +1,48 @@
+apiversion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/scrape
+  - secret.yaml
+patchesStrategicMerge:
+  - patch-affinity.yaml
+  - patch-env.yaml
+patchesJson6902:
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: scrape
+      version: v1
+commonLabels:
+  app: backend
+  component: scrape
+  environment: auctions
+configMapGenerator:
+  - name: scrape
+    literals:
+      - KD_API_PORT=3001
+      - KD_API_AUCTIONS_CORS=true
+      - KD_API_AUCTIONS_CORS_HOST="*"
+      - KD_DASHBOARD_PORT=3000
+      - KD_DASHBOARD_CONFIG_MANAGEMENT_ENABLED=true
+      - KD_DB_HOST=auctions-universe.cotqfbtbif7j.us-east-1.rds.amazonaws.com
+      - KD_DB_PORT=5432
+      - KD_DB_SSLMODE=disable
+      - KD_DB_DBNAME=kekdao
+      - KD_DB_USER=kekdao
+      - KD_ETH_CLIENT_POLL_INTERVAL=15s
+      - KD_FEATURE_BACKFILL_ENABLED=false
+      - KD_FEATURE_LAG_ENABLED=false
+      - KD_FEATURE_LAG_VALUE=10
+      - KD_FEATURE_AUTOMIGRATE_ENABLED=true
+      - KD_LOGGING="*=info"
+      - KD_REDIS_SERVER=redis-master:6379
+      - KD_REDIS_LIST=kekdao
+      - KD_ABI_PATH=./abis
+      - KD_STORABLE_KEK_ADDRESS=0x41E88dc0dfA5455E64327484F1862332413520da
+      - KD_STORABLE_SUPERNOVA_ADDRESS=0xb71fF62AEDFDCc68B72bEd3218c3cA137Dab0403
+      - KD_STORABLE_GOVERNANCE_ADDRESS=0x63172A077b3740Dd9Ae311F81c72Edb7170F135c
+      - KD_STORABLE_YIELDFARMING_ADDRESS=0xe3Ad77D3726357591cE665b051a41252aD2CDF4E
+      - KD_STORABLE_AUCTION_ADDRESS=0xB6d27AC9DB570a20dc20Cc6E2324AA3E3a3ceB45
+      - KD_STORABLE_UNIVERSE_ADDRESS=0xbD88C9084665762cbCa345004A41304d0D73fb75
+      - KD_STORABLE_UNIVERSE_PUBLIC_COLLECTION=0xd3ccbb9f3e5b9678c5f4fef91055704df81a104c

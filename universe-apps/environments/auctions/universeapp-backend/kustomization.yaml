@@ -1,0 +1,42 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universeapp-backend
+  - secret.yaml
+patchesStrategicMerge:
+  - patch-ingress.yaml
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-hostname.yaml
+    target:
+      group: networking.k8s.io
+      kind: Ingress
+      name: universeapp-backend
+      version: v1beta1
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universeapp-backend
+      version: v1
+commonLabels:
+  app: backend
+  component: universeapp-backend
+  environment: auctions
+configMapGenerator:
+  - name: universeapp-backend
+    literals:
+      - APP_PORT=3000
+      - AWS_BUCKET_NAME=universeapp-assets-auctions
+      - AWS_ACCESS_KEY_ID=AKIARDONMETSD6T5L5HB
+      - AWS_S3_BASE_URL=https://universeapp-assets-auctions.s3.amazonaws.com
+      - DB_DATABASE_NAME=kekdao
+      - DB_HOST=auctions-universe.cotqfbtbif7j.us-east-1.rds.amazonaws.com
+      - DB_PORT=5432
+      - DB_USERNAME=kekdao
+      - ETHEREUM_NETWORK=rinkeby
+      - INFURA_PROJECT_ID=25763b5ba15644a8b3079d3ee755bce5
+      - MORALIS_APPLICATION_ID=qWxPrLYp3Ug7ky6eyh7LIvVg2oF3q7GXNCU8z7nw
+      - MORALIS_SERVER_URL=https://6ynjucpsxnva.usemoralis.com:2053/server
+      - MORALIS_MASTER_KEY=JdTFna2xp50nxsrFCNolNci9rTtSZzDrneMlrVKN
+      - AUCTIONS_SOCKET_PORT=3003

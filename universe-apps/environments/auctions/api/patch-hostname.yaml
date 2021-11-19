@@ -1,0 +1,7 @@
+- op: replace
+  path: /spec/tls/0/hosts/0
+  value: auctions.api.dao.universe.xyz
+
+- op: replace
+  path: /spec/rules/0/host
+  value: auctions.api.dao.universe.xyz

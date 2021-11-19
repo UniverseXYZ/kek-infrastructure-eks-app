@@ -1,0 +1,17 @@
+apiversion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: auctions
+resources:
+  - namespace.yaml
+  - sources
+  - redis
+  - api
+  - scrape
+  - notifications
+  - postgres-proxy
+  - universeapp-backend
+images:
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
+    newTag: "c373038"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
+    newTag: "auctions-5825f2a"
