@@ -6,6 +6,7 @@ resources:
 patchesStrategicMerge:
   - patch-ingress.yaml
   - patch-affinity.yaml
+  - patch-redis.yaml
 patchesJson6902:
   - path: patch-hostname.yaml
     target:
