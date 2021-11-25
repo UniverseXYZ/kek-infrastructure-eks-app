@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: universeapp-backend
+spec:
+  template:
+    spec:
+      containers:
+      - name: main
+        env:
+        - name: KD_REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: redis
+              key: redis-password
