@@ -32,8 +32,8 @@ configMapGenerator:
       - KD_DB_USER=kekdao
       - KD_ETH_CLIENT_POLL_INTERVAL=15s
       - KD_FEATURE_BACKFILL_ENABLED=false
-      - KD_FEATURE_LAG_ENABLED=false
-      - KD_FEATURE_LAG_VALUE=10
+      - KD_FEATURE_LAG_ENABLED=true
+      - KD_FEATURE_LAG_VALUE=2
       - KD_FEATURE_AUTOMIGRATE_ENABLED=true
       - KD_LOGGING="*=info"
       - KD_REDIS_SERVER=redis-master:6379
