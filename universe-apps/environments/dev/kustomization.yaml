@@ -13,6 +13,6 @@ resources:
   - universeapp-backend
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
-    newTag: "a76404c"
+    newTag: "b9ff94a"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
     newTag: "auctions-be939a0"
