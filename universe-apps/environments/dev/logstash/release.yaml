@@ -20,7 +20,6 @@ spec:
       tag: 7.16.1
       debug: true
     extraEnvVars: []
-    extraEnvVarsSecret: logstash
     persistence:
       enabled: true
       storageClass: ebs-sc
