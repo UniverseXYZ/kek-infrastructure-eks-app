@@ -15,7 +15,7 @@ spec:
         name: bitnami
         namespace: dev
   values:
-    existingConfiguration: logstash
+    extraEnvVars: []
     extraEnvVarsSecret: logstash
     persistence:
       enabled: true
