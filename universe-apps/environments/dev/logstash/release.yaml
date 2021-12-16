@@ -15,10 +15,10 @@ spec:
         name: bitnami
         namespace: dev
   values:
-    initContainers: 
-    - name: install-plugins
-      image: bitnami/logstash:latest
-      command: ['sh', '-c', "bin/logstash-plugin install logstash-output-opensearch"]
+    image:
+      repository: opensearchproject/logstash-oss-with-opensearch-output-plugin
+      tag: 7.16.1
+      debug: true
     extraEnvVars: []
     extraEnvVarsSecret: logstash
     persistence:
