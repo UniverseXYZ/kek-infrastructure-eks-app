@@ -23,7 +23,7 @@ spec:
       size: 8Gi
     input: ""
     filter: ""
-    output: |
+    output: |-
       opensearch {
         hosts => ["https://vpc-universe-dev-rctynsnc4sybvk4uxetqyhwk3a.us-east-1.es.amazonaws.com:443"]
         index => "postgres-%{+YYYY.MM.dd}"
