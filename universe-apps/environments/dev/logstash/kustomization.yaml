@@ -5,14 +5,15 @@ resources:
   - secret.yaml
 configMapGenerator:
   - name: logstash
-    literals: |
-      input {}
-      filter {}
-      output {
-          opensearch {
-          hosts => ["https://vpc-universe-dev-rctynsnc4sybvk4uxetqyhwk3a.us-east-1.es.amazonaws.com:443"]
-          index => "postgres-%{+YYYY.MM.dd}"
-          user => "kekdao"
-          password => "Universe!!!420"
-          }
-      }
+    literals: 
+      - >-
+        input {}
+        filter {}
+        output {
+            opensearch {
+            hosts => ["https://vpc-universe-dev-rctynsnc4sybvk4uxetqyhwk3a.us-east-1.es.amazonaws.com:443"]
+            index => "postgres-%{+YYYY.MM.dd}"
+            user => "kekdao"
+            password => "Universe!!!420"
+            }
+        }
