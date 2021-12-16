@@ -17,6 +17,7 @@ spec:
   values:
     initContainers: 
     - name: install-plugins
+      image: bitnami/logstash:latest
       command: ['sh', '-c', "bin/logstash-plugin install logstash-output-opensearch"]
     extraEnvVars: []
     extraEnvVarsSecret: logstash
