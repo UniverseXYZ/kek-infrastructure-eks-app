@@ -14,11 +14,10 @@ spec:
         kind: HelmRepository
         name: bitnami
         namespace: dev
-      lifecycle:
-        postStart:
-          exec:
-            command: ["/bin/sh", "-c", "/bin/logstash-plugin install logstash-output-opensearch"]
   values:
+    initContainers: 
+    - name: install-plugins
+      command: ['sh', '-c', "bin/logstash-plugin install logstash-output-opensearch"]
     extraEnvVars: []
     extraEnvVarsSecret: logstash
     persistence:
