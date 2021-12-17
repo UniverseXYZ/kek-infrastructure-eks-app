@@ -12,6 +12,7 @@ resources:
   - postgres-proxy-nft
   - universeapp-backend
   - logstash
+  - opensearch-proxy
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: "b9ff94a"
