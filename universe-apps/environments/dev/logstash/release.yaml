@@ -22,7 +22,7 @@ spec:
     initContainers: 
     - name: install-plugins
       image: opensearchproject/logstash-oss-with-opensearch-output-plugin:7.16.1
-      command: ['sh', '-c', "/usr/share/bin/logstash-plugin install logstash-input-jdbc"]
+      command: ['sh', '-c', "bin/logstash-plugin install logstash-input-jdbc"]
 
     extraEnvVars: []
     persistence:
