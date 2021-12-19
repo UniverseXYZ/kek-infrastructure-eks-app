@@ -1,0 +1,69 @@
+USER-SUPPLIED VALUES:
+affinity: {}
+config:
+  caRotateBefore: 24h
+  caValidity: 8760h
+  certificatesRotateBefore: 24h
+  certificatesValidity: 8760h
+  containerRegistry: docker.elastic.co
+  elasticsearchClientTimeout: 180s
+  kubeClientTimeout: 60s
+  logVerbosity: "0"
+  maxConcurrentReconciles: "3"
+  metricsPort: "0"
+  setDefaultSecurityContext: true
+  validateStorageClass: true
+createClusterScopedResources: true
+env: []
+fullnameOverride: eck-operator
+image:
+  pullPolicy: IfNotPresent
+  repository: docker.elastic.co/eck/eck-operator
+  tag: null
+imagePullSecrets: []
+installCRDs: true
+internal:
+  createOperatorNamespace: true
+  manifestGen: false
+kubeAPIServerIP: null
+nameOverride: eck-operator
+nodeSelector: {}
+podSecurityContext:
+  runAsNonRoot: true
+refs:
+  enforceRBAC: false
+replicaCount: 1
+resources:
+  limits:
+    cpu: 1
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 150Mi
+securityContext: {}
+serviceAccount:
+  annotations: {}
+  create: true
+  name: ""
+softMultiTenancy:
+  enabled: false
+telemetry:
+  disabled: false
+  distributionChannel: helm
+tolerations: []
+tracing:
+  config:
+    ELASTIC_APM_SERVER_TIMEOUT: 30s
+    ELASTIC_APM_SERVER_URL: http://localhost:8200
+  enabled: false
+volumeMounts: []
+volumes: []
+webhook:
+  caBundle: Cg==
+  certManagerCert: null
+  certsDir: /tmp/k8s-webhook-server/serving-certs
+  enabled: true
+  failurePolicy: Ignore
+  manageCerts: true
+  namespaceSelector: {}
+  objectSelector: {}
