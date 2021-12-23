@@ -17,4 +17,4 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: "b9ff94a"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
-    newTag: "auctions-8e06eb8"
+    newTag: "bids-to-bigint-refactor-185-merge-906f542"
