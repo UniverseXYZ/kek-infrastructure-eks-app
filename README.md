@@ -138,3 +138,4 @@ kubectl -n dev port-forward $(kubectl -n dev get pods -l component=postgres-prox
 ```
 
 Replace `-n dev` with the name of the namespace/environment you need. You can now connect to `localhost:5432`
+
