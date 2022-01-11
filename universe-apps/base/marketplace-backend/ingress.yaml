@@ -20,7 +20,7 @@ spec:
     - host: marketplace-backend.local
       http:
         paths:
-          - path: /
+          - path: /v1
             backend:
               serviceName: marketplace-backend
               servicePort: http
