@@ -19,4 +19,4 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
     newTag: "auctions-0000bde"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
-    newTag: "chore-remove-ingress-11-merge-0439bd7"
+    newTag: "main-9651e57"
