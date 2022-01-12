@@ -41,3 +41,4 @@ configMapGenerator:
       - MORALIS_MASTER_KEY=JdTFna2xp50nxsrFCNolNci9rTtSZzDrneMlrVKN
       - REDIS_HOST=redis-master
       - REDIS_PORT=6379
+      - REDIS_PASSWORD=wRHZOtP865%

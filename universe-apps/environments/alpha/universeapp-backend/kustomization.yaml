@@ -42,3 +42,4 @@ configMapGenerator:
       - OPEN_SEA_X_API_KEY=1379b4994aa64cd09752e705f3f263c0
       - REDIS_HOST=redis-master
       - REDIS_PORT=6379
+      - REDIS_PASSWORD=xy81MIX9gF%
