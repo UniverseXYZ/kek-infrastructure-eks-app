@@ -28,5 +28,5 @@ configMapGenerator:
       - DB_SSL=false
       - DB_SYNC=false
       - DB_MIGRATIONS=true
-      - ORDERBOOK_URL=http://dev.marketplace-api.universe.xyz:8080
+      - ORDERBOOK_URL=http://marketplace-backend.svc.cluster.local:8080
       - SUBGRAPH_ORDERBOOK_ENDPOINT=https://api.thegraph.com/subgraphs/name/kunone/orderbook-rinkeby
