@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: marketplace-backend
+  name: marketplace-indexer
 spec:
   replicas: 1
   strategy:
@@ -13,24 +13,24 @@ spec:
     spec:
       initContainers:
       - name: db-migrate
-        image: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend:dev
+        image: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer:dev
         command: ["npm"]
         args: ["run", "db:migration:run"]
         imagePullPolicy: Always
         envFrom:
           - configMapRef:
-              name: marketplace-backend
+              name: marketplace-indexer
           - secretRef:
-              name: marketplace-backend
+              name: marketplace-indexer
       containers:
       - name: main
-        image: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend:dev
+        image: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer:dev
         imagePullPolicy: Always
         envFrom:
           - configMapRef:
-              name: marketplace-backend
+              name: marketplace-indexer
           - secretRef:
-              name: marketplace-backend
+              name: marketplace-indexer
         ports:
           - containerPort: 8080
             name: http
