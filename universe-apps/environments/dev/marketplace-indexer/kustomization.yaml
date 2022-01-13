@@ -1,0 +1,38 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/marketplace-indexer
+  - secret.yaml
+patchesStrategicMerge:
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-hostname.yaml
+    target:
+      group: networking.k8s.io
+      kind: Ingress
+      name: marketplace-indexer
+      version: v1beta1
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: marketplace-indexer
+      version: v1
+commonLabels:
+  app: indexer
+  component: marketplace-indexer
+  environment: dev
+configMapGenerator:
+  - name: marketplace-indexer
+    literals:
+      - APP_PORT=8080
+      - APP_ENV=dev
+      - DB_DATABASE_NAME=kekdao
+      - DB_HOST=dev-universe.cotqfbtbif7j.us-east-1.rds.amazonaws.com
+      - DB_PORT=5432
+      - DB_USERNAME=kekdao
+      - DB_SSL=false
+      - DB_SYNC=false
+      - DB_MIGRATIONS=true
+      - ORDERBOOK_URL=http://dev.marketplace-api.universe.xyz:8080
+      - SUBGRAPH_ORDERBOOK_ENDPOINT=https://api.thegraph.com/subgraphs/name/kunone/orderbook-rinkeby
