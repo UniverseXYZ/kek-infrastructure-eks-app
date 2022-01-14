@@ -1,0 +1,44 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universe-watchdog
+  - secret.yaml
+patchesStrategicMerge:
+  - patch-ingress.yaml
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-hostname.yaml
+    target:
+      group: networking.k8s.io
+      kind: Ingress
+      name: universe-watchdog
+      version: v1beta1
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universe-watchdog
+      version: v1
+commonLabels:
+  app: backend
+  component: universe-watchdog
+  environment: dev
+configMapGenerator:
+  - name: universe-watchdog
+    literals:
+      - APP_PORT=8080
+      - APP_ENV=dev
+      - DB_DATABASE_NAME=kekdao
+      - DB_HOST=dev-universe.cotqfbtbif7j.us-east-1.rds.amazonaws.com
+      - DB_PORT=5432
+      - DB_USERNAME=kekdao
+      - DB_SSL=false
+      - DB_SYNC=false
+      - DB_MIGRATIONS=true
+      - ALCHEMY_WEBHOOKID=156910
+      - ALCHEMY_WEBHOOKURL=https://dev.universe-watchdog.universe.xyz
+      - ALCHEMY_APPID=BUPSefCboFosJ8hwJ0fHosT-ae6VSJnz
+      - ALCHEMY_NETWORK=rinkeby
+      - ALCHEMY_APIKEY=BUPSefCboFosJ8hwJ0fHosT-ae6VSJnz
+      - ALCHEMY_AUTHTOKEN=8GnUCGB3wqzTtQTtz18-QxMO1pAK-rCj
+      - ORDERBOOK_CALLBACKURL=http://marketplace-backend.svc.cluster.local:8080
