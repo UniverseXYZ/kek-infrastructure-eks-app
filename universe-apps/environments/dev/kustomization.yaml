@@ -15,6 +15,7 @@ resources:
   - opensearch-proxy
   - marketplace-backend
   - marketplace-indexer
+  - universe-watchdog
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: "b9ff94a"
@@ -24,3 +25,5 @@ images:
     newTag: "main-19a5023"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
     newTag: "main-f0e89ac"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
+    newTag: "691f43e"
