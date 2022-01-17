@@ -35,7 +35,7 @@ configMapGenerator:
       - DB_SSL=false
       - DB_SYNC=false
       - DB_MIGRATIONS=true
-      - ALCHEMY_WEBHOOKID=156910
+      - ALCHEMY_WEBHOOKID=157072
       - ALCHEMY_WEBHOOKURL=https://dashboard.alchemyapi.io/api/create-webhook
       - ALCHEMY_APPID=lbc5wb5g0bnhbiqx
       - ALCHEMY_NETWORK=eth-rinkeby
