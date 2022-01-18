@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: documentdb-proxy
+spec:
+  externalName: universe-dev.cluster-cotqfbtbif7j.us-east-1.docdb.amazonaws.com
