@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: documentdb-proxy
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: proxy
+        image: gcr.io/google_containers/proxy-to-service:v1
+        ports:
+        - name: documentdb
+          protocol: TCP
+          containerPort: 27017
+      serviceAccount: default
