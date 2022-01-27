@@ -40,3 +40,6 @@ configMapGenerator:
       - MORALIS_SERVER_URL=https://nn01fvs7mtis.usemoralis.com:2053/server
       - MORALIS_MASTER_KEY=IbjFyJbxwHojjBzKOnPWCCGQuYhwnlsG29vi5Xse
       - OPEN_SEA_X_API_KEY=1379b4994aa64cd09752e705f3f263c0
+      - REDIS_HOST=redis-master
+      - REDIS_PORT=6379
+      - KD_REDIS_PASSWORD=23gVCVuoA9
