@@ -43,3 +43,4 @@ configMapGenerator:
       - REDIS_HOST=redis-master
       - REDIS_PORT=6379
       - KD_REDIS_PASSWORD=xy81MIX9gF
+      - API_SECRET=d9729feb74992cc3482b350163a1a010
