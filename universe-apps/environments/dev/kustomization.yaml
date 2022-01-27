@@ -19,7 +19,7 @@ resources:
   - documentdb-proxy
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
-    newTag: "b9ff94a"
+    newTag: "962fe4f"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
     newTag: "dev-3a513ed"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
