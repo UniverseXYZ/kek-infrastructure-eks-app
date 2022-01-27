@@ -14,4 +14,4 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: "962fe4f"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
-    newTag: "dev-3a513ed"
+    newTag: "john-add_animation_and_audio-210-merge-33ffb52"
