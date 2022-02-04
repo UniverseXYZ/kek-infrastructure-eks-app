@@ -11,4 +11,7 @@ metadata:
     nginx.ingress.kubernetes.io/affinity-mode: persistent
     nginx.ingress.kubernetes.io/session-cookie-name: PRODXYZCOOKIE
     nginx.ingress.kubernetes.io/proxy-body-size: "50m"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "150"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "150"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "150"
     nginx.org/client-max-body-size: "50m"
