@@ -39,4 +39,4 @@ configMapGenerator:
       - INFURA_PROJECT_ID=25763b5ba15644a8b3079d3ee755bce5
       - MARKETPLACE_CONTRACT=0x6Fc96E8C1DE8CC166dD5CDD647Fcc384a89AA4CE
       - SUBGRAPH_ORDERBOOK_ENDPOINT=https://api.thegraph.com/subgraphs/name/kunone/orderbook-rinkeby
-      - WATCHDOG_URL=http://marketplace-watchdog:8080
+      - WATCHDOG_URL=http://universe-watchdog:8080
