@@ -41,4 +41,4 @@ configMapGenerator:
       - ALCHEMY_NETWORK=eth-rinkeby
       - ALCHEMY_APIKEY=BUPSefCboFosJ8hwJ0fHosT-ae6VSJnz
       - ALCHEMY_AUTHTOKEN=8GnUCGB3wqzTtQTtz18-QxMO1pAK-rCj
-      - ORDERBOOK_CALLBACKURL=http://marketplace-backend.svc.cluster.local:8080/internal/orders/track
+      - ORDERBOOK_CALLBACKURL=http://marketplace-backend:8080/internal/orders/track
