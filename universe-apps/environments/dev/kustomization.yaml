@@ -23,6 +23,7 @@ resources:
   - universe-datascraper-metadata-consumer
   - universe-datascraper-metadata-producer
   - universe-datascraper-transfer-consumer
+  - universe-datascraper-transfer-producer
 
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
