@@ -18,6 +18,7 @@ resources:
   - universe-watchdog
   - documentdb-proxy
   - universe-datascraper-api
+  - universe-datascraper-mediafiles-consumer
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: "962fe4f"
@@ -31,3 +32,5 @@ images:
     newTag: "e94c154"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
     newTag: "main-c483557"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
+    newTag: "main-e0ca152"
