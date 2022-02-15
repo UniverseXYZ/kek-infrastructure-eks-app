@@ -20,6 +20,8 @@ resources:
   - universe-datascraper-api
   - universe-datascraper-mediafiles-consumer
   - universe-datascraper-mediafiles-producer
+  - universe-datascraper-metadata-consumer
+
 
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
@@ -38,3 +40,5 @@ images:
     newTag: "main-e0ca152"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
     newTag: "main-f5b3466"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
+    newTag: "main-1e91c25"
