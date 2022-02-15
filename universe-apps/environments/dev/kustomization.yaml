@@ -47,3 +47,5 @@ images:
     newTag: "main-175d84c"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer
     newTag: "main-1730ab8"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer
+    newTag: "main-7218da2"
