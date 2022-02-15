@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-transfer:
+metadata:
   name: universe-datascraper-transfer-consumer
 spec:
   replicas: 1
