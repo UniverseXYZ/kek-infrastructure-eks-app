@@ -15,3 +15,17 @@ images:
     newTag: "962fe4f"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
     newTag: "3bf4d97"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
+    newTag: "main-c483557"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
+    newTag: "main-e0ca152"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
+    newTag: "main-f5b3466"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
+    newTag: "main-1e91c25"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
+    newTag: "main-175d84c"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer
+    newTag: "main-1730ab8"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer
+    newTag: "main-7218da2"
