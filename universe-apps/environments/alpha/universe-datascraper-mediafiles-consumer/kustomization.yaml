@@ -1,0 +1,34 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universe-datascraper-mediafiles-consumer
+  - secret.yaml
+patchesStrategicMerge:
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universe-datascraper-mediafiles-consumer
+      version: v1
+commonLabels:
+  app: indexer
+  component: universe-datascraper-mediafiles-consumer
+  environment: alpha
+configMapGenerator:
+  - name: universe-datascraper-mediafiles-consumer
+    literals:
+      - AWS_REGION=us-east-1
+      - AWS_ACCESS_KEY_ID=AKIARDONMETSALD6H4TH
+      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/datascraper-media.fifo
+      - VIDEO_BUCKET=universe-dev-datascraper-video
+      - IMAGE_BUCKET=universe-dev-datascraper-images
+      - AUDIO_BUCKET=universe-dev-datascraper-audio
+      - MODEL_BUCKET=universe-dev-datascraper-models
+      - MISC_BUCKET=universe-dev-datascraper-misc
+      - ETHEREUM_NETWORK=mainnet
+      - INFURA_PROJECT_ID=978f8f87fbdd4ea0b94fe0ab245b06db
+      - SESSION_SECRET=XYZDAO
+      - IPFS_GATEWAY=https://ipfs.infura.io/ipfs/
+      - APP_ENV=alpha

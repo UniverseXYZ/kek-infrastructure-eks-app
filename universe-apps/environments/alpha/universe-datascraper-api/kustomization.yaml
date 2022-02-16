@@ -1,0 +1,31 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universe-datascraper-api
+  - secret.yaml
+patchesStrategicMerge:
+  - patch-ingress.yaml
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-hostname.yaml
+    target:
+      group: networking.k8s.io
+      kind: Ingress
+      name: universe-datascraper-api
+      version: v1beta1
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universe-datascraper-api
+      version: v1
+commonLabels:
+  app: backend
+  component: universe-datascraper-api
+  environment: alpha
+configMapGenerator:
+  - name: universe-datascraper-api
+    literals:
+      - PORT=8080
+      - SESSION_SECRET=XYZDAO
+      - APP_ENV=alpha
