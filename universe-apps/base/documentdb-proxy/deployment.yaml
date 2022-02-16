@@ -8,7 +8,7 @@ spec:
     spec:
       containers:
       - name: proxy
-        image: gcr.io/google_containers/proxy-to-service:v1
+        image: gcr.io/google_containers/proxy-to-service:v2
         ports:
         - name: documentdb
           protocol: TCP
