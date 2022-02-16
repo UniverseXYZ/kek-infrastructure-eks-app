@@ -22,7 +22,7 @@ configMapGenerator:
       - AWS_REGION=us-east-1
       - AWS_ACCESS_KEY_ID=AKIARDONMETSALD6H4TH
       - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/datascraper-token.fifo
-      - ETHEREUM_NETWORK=rinkeby
+      - ETHEREUM_NETWORK=mainnet
       - INFURA_PROJECT_ID=978f8f87fbdd4ea0b94fe0ab245b06db
       - INFURA_PROJECT_SECRET=775db2b9d9b94b8189665f00bceae69b
       - SESSION_SECRET=XYZDAO

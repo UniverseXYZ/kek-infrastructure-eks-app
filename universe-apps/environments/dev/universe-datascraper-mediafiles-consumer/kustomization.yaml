@@ -27,7 +27,7 @@ configMapGenerator:
       - AUDIO_BUCKET=universe-dev-datascraper-audio
       - MODEL_BUCKET=universe-dev-datascraper-models
       - MISC_BUCKET=universe-dev-datascraper-misc
-      - ETHEREUM_NETWORK=rinkeby
+      - ETHEREUM_NETWORK=mainnet
       - INFURA_PROJECT_ID=978f8f87fbdd4ea0b94fe0ab245b06db
       - SESSION_SECRET=XYZDAO
       - IPFS_GATEWAY=https://ipfs.infura.io/ipfs/

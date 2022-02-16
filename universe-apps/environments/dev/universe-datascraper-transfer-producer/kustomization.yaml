@@ -22,10 +22,12 @@ configMapGenerator:
       - AWS_REGION=us-east-1
       - AWS_ACCESS_KEY_ID=AKIARDONMETSALD6H4TH
       - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/datascraper-transfer.fifo
-      - ETHEREUM_NETWORK=rinkeby
+      - ETHEREUM_NETWORK=mainnet
       - INFURA_PROJECT_ID=978f8f87fbdd4ea0b94fe0ab245b06db
       - INFURA_PROJECT_SECRET=775db2b9d9b94b8189665f00bceae69b
       - SESSION_SECRET=XYZDAO
       - IPFS_GATEWAY=https://ipfs.infura.io/ipfs/
       - APP_ENV=dev
       - PORT=8080
+      - BLOCKS_INTERVAL=2000
+      - MESSAGES_PER_PROCESS=100
