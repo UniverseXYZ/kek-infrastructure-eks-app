@@ -34,6 +34,6 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
     newTag: "main-61d931a"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer
-    newTag: "main-1730ab8"
+    newTag: "main-b9669e4"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer
     newTag: "main-5cdd073"
