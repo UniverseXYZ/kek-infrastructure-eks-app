@@ -29,6 +29,6 @@ configMapGenerator:
       - IPFS_GATEWAY=https://ipfs.infura.io/ipfs/
       - APP_ENV=alpha
       - PORT=8080
-      - BLOCKS_INTERVAL=2000
+      - BLOCKS_INTERVAL=1000
       - MESSAGES_PER_PROCESS=100
       - END_BLOCK=14249049
