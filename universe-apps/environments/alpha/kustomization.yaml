@@ -24,7 +24,7 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
     newTag: "3bf4d97"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
-    newTag: "main-c483557"
+    newTag: "main-f318cff"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
     newTag: "main-e0ca152"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
