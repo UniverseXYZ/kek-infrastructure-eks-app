@@ -50,3 +50,7 @@ images:
     newTag: "main-fce064b"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer
     newTag: "main-5cdd073"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-block-consumer
+    newTag: "main-83ef843"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-block-producer
+    newTag: "main-6087e0b"
