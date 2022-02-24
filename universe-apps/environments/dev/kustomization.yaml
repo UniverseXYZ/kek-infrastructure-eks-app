@@ -37,7 +37,7 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
     newTag: "e94c154"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
-    newTag: "main-f318cff"
+    newTag: "main-824625b"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
     newTag: "main-eacfc12"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
