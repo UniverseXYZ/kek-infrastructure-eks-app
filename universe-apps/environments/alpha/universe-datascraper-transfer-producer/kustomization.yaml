@@ -31,4 +31,4 @@ configMapGenerator:
       - PORT=8080
       - BLOCKS_INTERVAL=1000
       - MESSAGES_PER_PROCESS=100
-      - END_BLOCK=14264615
+      - END_BLOCK=14272580
