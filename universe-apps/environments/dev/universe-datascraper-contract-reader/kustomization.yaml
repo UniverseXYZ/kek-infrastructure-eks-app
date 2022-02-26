@@ -1,0 +1,26 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universe-datascraper-contract-reader
+  - secret.yaml
+patchesStrategicMerge:
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universe-datascraper-contract-reader
+      version: v1
+commonLabels:
+  app: indexer
+  component: universe-datascraper-contract-reader
+  environment: dev
+configMapGenerator:
+  - name: universe-datascraper-contract-reader
+    literals:
+      - ETHEREUM_NETWORK=rinkeby
+      - INFURA_PROJECT_ID=24dfd27eacf24481819d98036173cfaa
+      - SESSION_SECRET=XYZDAO
+      - APP_ENV=dev
+      - PORT=8080
