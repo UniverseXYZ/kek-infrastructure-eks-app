@@ -20,6 +20,8 @@ resources:
   - universe-datascraper-transfer-producer
   - universe-datascraper-block-consumer
   - universe-datascraper-block-producer
+  - universe-datascraper-contract-reader
+  
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: "962fe4f"
