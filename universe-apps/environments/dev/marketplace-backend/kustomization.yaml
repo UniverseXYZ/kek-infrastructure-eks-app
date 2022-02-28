@@ -40,3 +40,4 @@ configMapGenerator:
       - MARKETPLACE_CONTRACT=0xe441c394F917D5a90019C76897458257801ce132
       - SUBGRAPH_ORDERBOOK_ENDPOINT=https://api.thegraph.com/subgraphs/name/kunone/orderbook-rinkeby
       - WATCHDOG_URL=http://universe-watchdog:8080
+      - ETHEREUM_CHAIN_ID=4
