@@ -46,6 +46,6 @@ spec:
           readOnlyRootFilesystem: false
         resources:
           requests:
-            cpu: 200m
-            memory: 512Mi
+            cpu: 50m
+            memory: 256Mi
       serviceAccountName: default
