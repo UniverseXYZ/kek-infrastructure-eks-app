@@ -11,6 +11,9 @@ resources:
   - scrape
   - universeapp-backend
   - documentdb-proxy
+  - marketplace-backend
+  - marketplace-indexer
+  - universe-watchdog
   - universe-datascraper-api
   - universe-datascraper-mediafiles-consumer
   - universe-datascraper-mediafiles-producer
@@ -27,6 +30,12 @@ images:
     newTag: "962fe4f"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
     newTag: "3bf4d97"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
+    newTag: "main-fa0bc0c"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
+    newTag: "main-deb9b44"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
+    newTag: "e94c154"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
     newTag: "main-f318cff"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer

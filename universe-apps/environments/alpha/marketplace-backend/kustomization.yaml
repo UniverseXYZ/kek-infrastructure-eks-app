@@ -1,0 +1,43 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/marketplace-backend
+  - secret.yaml
+patchesStrategicMerge:
+  - patch-ingress.yaml
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-hostname.yaml
+    target:
+      group: networking.k8s.io
+      kind: Ingress
+      name: marketplace-backend
+      version: v1beta1
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: marketplace-backend
+      version: v1
+commonLabels:
+  app: backend
+  component: marketplace-backend
+  environment: dev
+configMapGenerator:
+  - name: marketplace-backend
+    literals:
+      - APP_PORT=8080
+      - APP_ENV=alpha
+      - DB_DATABASE_NAME=kekdao
+      - DB_HOST=alpha-universe.cotqfbtbif7j.us-east-1.rds.amazonaws.com
+      - DB_PORT=5432
+      - DB_USERNAME=kekdao
+      - DB_SSL=false
+      - DB_SYNC=false
+      - DB_MIGRATIONS=true
+      - ETHEREUM_NETWORK=mainnet
+      - ETHEREUM_CHAIN_ID=1
+      - INFURA_PROJECT_ID=25763b5ba15644a8b3079d3ee755bce5
+      - MARKETPLACE_CONTRACT=0x5E20006f3FB9bD7C51A337443d35D182d293914B
+      - SUBGRAPH_ORDERBOOK_ENDPOINT=https://thegraph.com/hosted-service/subgraph/paveldonskikh/orderbookmainnet
+      - WATCHDOG_URL=http://universe-watchdog:8080
