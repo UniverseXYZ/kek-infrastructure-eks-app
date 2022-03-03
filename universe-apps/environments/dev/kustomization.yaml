@@ -58,4 +58,4 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-block-producer
     newTag: "main-af57667"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-contract-reader
-    newTag: "main-085a63f"
+    newTag: "main-283cc8d"
