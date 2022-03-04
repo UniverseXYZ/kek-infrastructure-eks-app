@@ -31,5 +31,5 @@ configMapGenerator:
       - INFURA_PROJECT_ID=24dfd27eacf24481819d98036173cfaa
       - INFURA_IPFS_PROJECT_ID=25vSfS4V1v4iI3pweR494fC2yJ4
       - SESSION_SECRET=XYZDAO
-      - IPFS_GATEWAY=https://ipfs.infura.io
+      - IPFS_GATEWAY=https://ipfs.infura.io/ipfs
       - APP_ENV=dev
