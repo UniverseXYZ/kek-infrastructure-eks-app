@@ -27,3 +27,4 @@ configMapGenerator:
       - SESSION_SECRET=XYZDAO
       - APP_ENV=alpha
       - DEFAULT_START_BLOCK=14269583
+      - ETHEREUM_QUORUM=1

@@ -26,3 +26,4 @@ configMapGenerator:
       - INFURA_PROJECT_SECRET=41ef1d3f11c841ea9eab1341f7e9bc7b
       - SESSION_SECRET=XYZDAO
       - APP_ENV=dev
+      - ETHEREUM_QUORUM=1

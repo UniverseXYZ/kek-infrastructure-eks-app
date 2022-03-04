@@ -27,3 +27,4 @@ configMapGenerator:
       - SESSION_SECRET=XYZDAO
       - APP_ENV=dev
       - PORT=8080
+      - ETHEREUM_QUORUM=1

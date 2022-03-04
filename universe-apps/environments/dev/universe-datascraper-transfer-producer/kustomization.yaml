@@ -30,3 +30,4 @@ configMapGenerator:
       - PORT=8080
       - BLOCKS_INTERVAL=2000
       - MESSAGES_PER_PROCESS=100
+      - ETHEREUM_QUORUM=1
