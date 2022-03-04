@@ -44,20 +44,20 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
     newTag: "main-7e6f6b6"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
-    newTag: "main-b4128bb"
+    newTag: "main-efb83ec"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
     newTag: "main-98a8a6e"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
-    newTag: "main-ba86cea"
+    newTag: "main-ec9bd7b"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
     newTag: "main-7543043"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer
     newTag: "main-07c54f6"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer
-    newTag: "main-3fea9c1"
+    newTag: "main-e0b4e72"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-block-consumer
-    newTag: "main-f88448b"
+    newTag: "main-af97940"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-block-producer
-    newTag: "main-af57667"
+    newTag: "main-6e4caff"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-contract-reader
-    newTag: "main-283cc8d"
+    newTag: "main-4f187c0"
