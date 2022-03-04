@@ -19,7 +19,7 @@ spec:
           - configMapRef:
               name: universe-datascraper-block-producer
           - secretRef:
-              name: universe-datascraper-block-producer
+              name: universe-datascraper
         ports:
           - containerPort: 8080
             name: http

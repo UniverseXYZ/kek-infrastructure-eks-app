@@ -19,7 +19,7 @@ spec:
           - configMapRef:
               name: universe-datascraper-contract-reader
           - secretRef:
-              name: universe-datascraper-contract-reader
+              name: universe-datascraper
         ports:
           - containerPort: 8080
             name: http
