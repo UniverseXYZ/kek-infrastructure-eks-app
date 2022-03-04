@@ -2,7 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ../../../base/universe-datascraper-mediafiles-producer
-  - secret.yaml
 patchesStrategicMerge:
   - patch-affinity.yaml
 patchesJson6902:
@@ -26,5 +25,5 @@ configMapGenerator:
       - INFURA_PROJECT_ID=978f8f87fbdd4ea0b94fe0ab245b06db
       - INFURA_PROJECT_SECRET=775db2b9d9b94b8189665f00bceae69b
       - SESSION_SECRET=XYZDAO
-      - IPFS_GATEWAY=https://ipfs.infura.io/ipfs/
+      - IPFS_GATEWAY=https://graviton.mypinata.cloud/ipfs/
       - APP_ENV=alpha
