@@ -19,8 +19,7 @@ configMapGenerator:
   - name: universe-datascraper-contract-reader
     literals:
       - ETHEREUM_NETWORK=mainnet
-      - INFURA_PROJECT_ID=978f8f87fbdd4ea0b94fe0ab245b06db
-      - SESSION_SECRET=XYZDAO
+      - INFURA_PROJECT_ID=a326b79f38544771817120dbcf268b0f
       - APP_ENV=alpha
       - PORT=8080
       - ETHERSCAN_API_KEY=YNV3U5WEKNYXI2TV817118XH9MCC91ZKI2

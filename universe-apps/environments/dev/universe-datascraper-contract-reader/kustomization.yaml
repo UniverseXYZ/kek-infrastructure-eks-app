@@ -20,7 +20,6 @@ configMapGenerator:
     literals:
       - ETHEREUM_NETWORK=rinkeby
       - INFURA_PROJECT_ID=24dfd27eacf24481819d98036173cfaa
-      - SESSION_SECRET=XYZDAO
       - APP_ENV=dev
       - PORT=8080
       - ETHERSCAN_API_KEY=YNV3U5WEKNYXI2TV817118XH9MCC91ZKI2

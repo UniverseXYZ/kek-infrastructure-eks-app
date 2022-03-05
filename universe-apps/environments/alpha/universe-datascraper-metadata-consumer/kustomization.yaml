@@ -22,8 +22,7 @@ configMapGenerator:
       - AWS_ACCESS_KEY_ID=AKIARDONMETSALD6H4TH
       - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/datascraper-token.fifo
       - ETHEREUM_NETWORK=mainnet
-      - INFURA_PROJECT_ID=978f8f87fbdd4ea0b94fe0ab245b06db
-      - SESSION_SECRET=XYZDAO
+      - INFURA_PROJECT_ID=a326b79f38544771817120dbcf268b0f
       - IPFS_GATEWAY=https://graviton.mypinata.cloud/ipfs/
       - SPECIAL_CASES_OPEN_SEA_1155_URI=https://api.opensea.io/api/v1/metadata
       - APP_ENV=alpha

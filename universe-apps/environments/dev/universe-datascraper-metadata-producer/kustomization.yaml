@@ -23,8 +23,6 @@ configMapGenerator:
       - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/rinkeby-datascraper-token.fifo
       - ETHEREUM_NETWORK=rinkeby
       - INFURA_PROJECT_ID=24dfd27eacf24481819d98036173cfaa
-      - INFURA_PROJECT_SECRET=41ef1d3f11c841ea9eab1341f7e9bc7b
-      - SESSION_SECRET=XYZDAO
       - IPFS_GATEWAY=https://graviton.mypinata.cloud/ipfs/
       - APP_ENV=dev
       - PORT=8080
