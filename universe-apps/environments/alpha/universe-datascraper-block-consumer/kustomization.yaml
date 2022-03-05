@@ -24,4 +24,4 @@ configMapGenerator:
       - ETHEREUM_NETWORK=mainnet
       - INFURA_PROJECT_ID=a326b79f38544771817120dbcf268b0f
       - APP_ENV=alpha
-      - ETHEREUM_QUORUM=1
+      - ETHEREUM_QUORUM=2

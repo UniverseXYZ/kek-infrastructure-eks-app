@@ -30,4 +30,4 @@ configMapGenerator:
       - INFURA_PROJECT_ID=24dfd27eacf24481819d98036173cfaa
       - IPFS_GATEWAY=https://graviton.mypinata.cloud/ipfs/
       - APP_ENV=dev
-      - ETHEREUM_QUORUM=1
+      - ETHEREUM_QUORUM=2

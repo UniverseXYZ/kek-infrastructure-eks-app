@@ -27,4 +27,4 @@ configMapGenerator:
       - SPECIAL_CASES_OPEN_SEA_1155_URI=https://api.opensea.io/api/v1/metadata
       - APP_ENV=dev
       - PORT=8080
-      - ETHEREUM_QUORUM=1
+      - ETHEREUM_QUORUM=2

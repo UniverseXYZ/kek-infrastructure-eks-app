@@ -24,4 +24,4 @@ configMapGenerator:
       - ETHEREUM_NETWORK=rinkeby
       - INFURA_PROJECT_ID=24dfd27eacf24481819d98036173cfaa
       - APP_ENV=dev
-      - ETHEREUM_QUORUM=1
+      - ETHEREUM_QUORUM=2

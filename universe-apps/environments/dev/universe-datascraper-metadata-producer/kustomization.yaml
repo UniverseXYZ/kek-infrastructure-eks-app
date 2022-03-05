@@ -26,4 +26,4 @@ configMapGenerator:
       - IPFS_GATEWAY=https://graviton.mypinata.cloud/ipfs/
       - APP_ENV=dev
       - PORT=8080
-      - ETHEREUM_QUORUM=1
+      - ETHEREUM_QUORUM=2

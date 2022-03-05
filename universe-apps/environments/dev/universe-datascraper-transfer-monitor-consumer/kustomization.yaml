@@ -25,4 +25,4 @@ configMapGenerator:
       - INFURA_PROJECT_ID=24dfd27eacf24481819d98036173cfaa
       - APP_ENV=dev
       - PORT=8080
-      - ETHEREUM_QUORUM=1
+      - ETHEREUM_QUORUM=2
