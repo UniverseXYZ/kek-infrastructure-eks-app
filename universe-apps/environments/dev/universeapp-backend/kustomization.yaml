@@ -36,15 +36,14 @@ configMapGenerator:
       - DB_PORT=5432
       - DB_USERNAME=kekdao
       - ETHEREUM_NETWORK=rinkeby
-      - INFURA_PROJECT_ID=25763b5ba15644a8b3079d3ee755bce5
+      - INFURA_PROJECT_ID=3c1876c59e1342d89b97cd7a6500dca7
       - MORALIS_APPLICATION_ID=qWxPrLYp3Ug7ky6eyh7LIvVg2oF3q7GXNCU8z7nw
       - MORALIS_SERVER_URL=https://6ynjucpsxnva.usemoralis.com:2053/server
       - MORALIS_MASTER_KEY=JdTFna2xp50nxsrFCNolNci9rTtSZzDrneMlrVKN
       - REDIS_HOST=redis-master
       - REDIS_PORT=6379
-      - KD_REDIS_PASSWORD=8UXLOJ8Kvq
-      - GOOGLE_CAPTCHA_SECRET_KEY=6LcuWmseAAAAAOIrHRAYrcG1nbhchkQST0R175f6
       - GOOGLE_SENDER_EMAIL=noreply@universe.xyz
       - GOOGLE_SENDER_EMAIL_PASSWORD=urlrlxeqeehnfonr
       - REPORT_VIOLATIONS_EMAIL=reports@universe.xyz
+      - ETHEREUM_QUORUM=2
 
