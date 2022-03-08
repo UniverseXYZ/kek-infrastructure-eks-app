@@ -43,7 +43,6 @@ configMapGenerator:
       - REDIS_HOST=redis-master
       - REDIS_PORT=6379
       - GOOGLE_SENDER_EMAIL=noreply@universe.xyz
-      - GOOGLE_SENDER_EMAIL_PASSWORD=urlrlxeqeehnfonr
       - REPORT_VIOLATIONS_EMAIL=reports@universe.xyz
       - ETHEREUM_QUORUM=2
 
