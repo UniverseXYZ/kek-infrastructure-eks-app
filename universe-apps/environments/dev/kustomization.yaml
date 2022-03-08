@@ -34,7 +34,7 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: "962fe4f"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
-    newTag: "dev-0d69db2"
+    newTag: "dev-bac0fda"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
     newTag: "main-b26d65d"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
