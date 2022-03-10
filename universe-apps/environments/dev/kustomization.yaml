@@ -36,7 +36,7 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
     newTag: "dev-5b84b2c"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
-    newTag: "main-60f4b60"
+    newTag: "main-c6ae1d8"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
     newTag: "main-d2c4521"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
