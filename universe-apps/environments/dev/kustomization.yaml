@@ -26,6 +26,8 @@ resources:
   - universe-datascraper-transfer-producer
   - universe-datascraper-block-consumer
   - universe-datascraper-block-producer
+  - universe-datascraper-block-consumer-backwards
+  - universe-datascraper-block-producer-backwards
   - universe-datascraper-contract-reader
   - universe-datascraper-transfer-monitor-consumer
   - universe-datascraper-transfer-monitor-producer
