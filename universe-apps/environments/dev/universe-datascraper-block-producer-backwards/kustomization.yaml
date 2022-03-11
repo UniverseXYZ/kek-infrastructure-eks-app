@@ -25,5 +25,6 @@ configMapGenerator:
       - INFURA_PROJECT_ID=24dfd27eacf24481819d98036173cfaa
       - APP_ENV=dev
       - DEFAULT_START_BLOCK=10263889
+      - DEFAULT_END_BLOCK=10000
       - ETHEREUM_QUORUM=2
       - BLOCK_DIRECTION=down

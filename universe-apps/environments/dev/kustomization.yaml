@@ -60,6 +60,6 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-block-consumer
     newTag: "main-887972d"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-block-producer
-    newTag: "main-0078bba"
+    newTag: "main-1b32d47"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-contract-reader
     newTag: "main-689f722"
