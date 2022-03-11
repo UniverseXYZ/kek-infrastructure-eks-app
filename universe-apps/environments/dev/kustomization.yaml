@@ -48,7 +48,7 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
     newTag: "main-7cc3176"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
-    newTag: "main-c0e5fda"
+    newTag: "main-2ef9ca8"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
     newTag: "main-8d16dac"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
