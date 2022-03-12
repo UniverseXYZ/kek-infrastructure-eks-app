@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: universe-datascraper-metadata-consumer
+  name: universe-datascraper-owners-consumer
 spec:
   template:
     spec:
@@ -15,5 +15,5 @@ spec:
                 - key: component
                   operator: In
                   values:
-                  - universe-datascraper-metadata-consumer
+                  - universe-datascraper-owners-consumer
               topologyKey: topology.kubernetes.io/zone
