@@ -29,3 +29,4 @@ configMapGenerator:
       - BLOCKS_INTERVAL=2000
       - MESSAGES_PER_PROCESS=100
       - ETHEREUM_QUORUM=2
+      - END_BLOCK=10313929
