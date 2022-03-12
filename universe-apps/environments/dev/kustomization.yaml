@@ -31,6 +31,8 @@ resources:
   - universe-datascraper-contract-reader
   - universe-datascraper-transfer-monitor-consumer
   - universe-datascraper-transfer-monitor-producer
+  - universe-datascraper-owners-consumer
+  - universe-datascraper-owners-producer
 
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
@@ -63,3 +65,7 @@ images:
     newTag: "main-1b32d47"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-contract-reader
     newTag: "main-689f722"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-consumer
+    newTag: "main-a6da80c"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-producer
+    newTag: "main-d30746a"

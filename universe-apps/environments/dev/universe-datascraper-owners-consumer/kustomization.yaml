@@ -1,0 +1,27 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universe-datascraper-owners-consumer
+patchesStrategicMerge:
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universe-datascraper-owners-consumer
+      version: v1
+commonLabels:
+  app: indexer
+  component: universe-datascraper-owners-consumer
+  environment: dev
+configMapGenerator:
+  - name: universe-datascraper-owners-consumer
+    literals:
+      - AWS_REGION=us-east-1
+      - AWS_ACCESS_KEY_ID=AKIARDONMETSJIL57BAC
+      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/rinkeby-datascraper-owner.fifo
+      - ETHEREUM_NETWORK=rinkeby
+      - INFURA_PROJECT_ID=24dfd27eacf24481819d98036173cfaa
+      - APP_ENV=dev
+      - PORT=8080
