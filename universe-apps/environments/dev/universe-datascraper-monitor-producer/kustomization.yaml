@@ -26,3 +26,4 @@ configMapGenerator:
       - APP_ENV=dev
       - PORT=8080
       - DEFAULT_START_BLOCK=10313930
+      - BLOCK_DELAY=2
