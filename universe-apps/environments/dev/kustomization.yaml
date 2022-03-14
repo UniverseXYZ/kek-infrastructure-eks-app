@@ -74,4 +74,4 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer
     newTag: "main-012edac"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-producer
-    newTag: "main-3b3cc66"
+    newTag: "main-4bff432"
