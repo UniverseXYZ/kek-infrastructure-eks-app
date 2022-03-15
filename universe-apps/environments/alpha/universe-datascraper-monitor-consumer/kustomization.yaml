@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../../base/universe-datascraper-transfer-producer
+  - ../../../base/universe-datascraper-monitor-consumer
 patchesStrategicMerge:
   - patch-affinity.yaml
 patchesJson6902:
@@ -9,24 +9,20 @@ patchesJson6902:
     target:
       group: apps
       kind: Deployment
-      name: universe-datascraper-transfer-producer
+      name: universe-datascraper-monitor-consumer
       version: v1
 commonLabels:
   app: indexer
-  component: universe-datascraper-transfer-producer
+  component: universe-datascraper-monitor-consumer
   environment: alpha
 configMapGenerator:
-  - name: universe-datascraper-transfer-producer
+  - name: universe-datascraper-monitor-consumer
     literals:
       - AWS_REGION=us-east-1
       - AWS_ACCESS_KEY_ID=AKIARDONMETSALD6H4TH
-      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/datascraper-transfer.fifo
+      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/datascraper-transfer-monitor.fifo
       - ETHEREUM_NETWORK=mainnet
       - INFURA_PROJECT_ID=a326b79f38544771817120dbcf268b0f
-      - IPFS_GATEWAY=https://graviton.mypinata.cloud/ipfs/
       - APP_ENV=alpha
       - PORT=8080
-      - BLOCKS_INTERVAL=1000
-      - MESSAGES_PER_PROCESS=100
-      - END_BLOCK=14390000
       - ETHEREUM_QUORUM=2
