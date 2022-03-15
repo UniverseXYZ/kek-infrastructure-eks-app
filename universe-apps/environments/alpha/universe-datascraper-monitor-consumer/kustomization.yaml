@@ -1,0 +1,28 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universe-datascraper-monitor-consumer
+patchesStrategicMerge:
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universe-datascraper-monitor-consumer
+      version: v1
+commonLabels:
+  app: indexer
+  component: universe-datascraper-monitor-consumer
+  environment: alpha
+configMapGenerator:
+  - name: universe-datascraper-monitor-consumer
+    literals:
+      - AWS_REGION=us-east-1
+      - AWS_ACCESS_KEY_ID=AKIARDONMETSALD6H4TH
+      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/datascraper-transfer-monitor.fifo
+      - ETHEREUM_NETWORK=mainnet
+      - INFURA_PROJECT_ID=a326b79f38544771817120dbcf268b0f
+      - APP_ENV=alpha
+      - PORT=8080
+      - ETHEREUM_QUORUM=2

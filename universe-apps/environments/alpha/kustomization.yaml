@@ -28,6 +28,8 @@ resources:
   - universe-datascraper-transfer-monitor-producer
   - universe-datascraper-owners-consumer
   - universe-datascraper-owners-producer
+  - universe-datascraper-monitor-consumer
+  - universe-datascraper-monitor-producer
 
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
@@ -64,3 +66,7 @@ images:
     newTag: "main-a6da80c"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-producer
     newTag: "main-d30746a"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer
+    newTag: "main-a97ab52"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-producer
+    newTag: "main-4bff432"
