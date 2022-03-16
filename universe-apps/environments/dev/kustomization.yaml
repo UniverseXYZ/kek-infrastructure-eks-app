@@ -44,11 +44,11 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
     newTag: "main-25a90ca"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
-    newTag: "main-d2c4521"
+    newTag: "main-a3ac284"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
     newTag: "e94c154"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
-    newTag: "main-9e53f44"
+    newTag: "main-6387e72"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
     newTag: "main-7cc3176"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
