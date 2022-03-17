@@ -1,0 +1,29 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universe-datascraper-transfer-monitor-producer
+patchesStrategicMerge:
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universe-datascraper-transfer-monitor-producer
+      version: v1
+commonLabels:
+  app: indexer
+  component: universe-datascraper-transfer-monitor-producer
+  environment: alpha
+configMapGenerator:
+  - name: universe-datascraper-transfer-monitor-producer
+    literals:
+      - AWS_REGION=us-east-1
+      - AWS_ACCESS_KEY_ID=AKIARDONMETSDXC2YHRN
+      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/prod-datascraper-transfer-monitor.fifo
+      - ETHEREUM_NETWORK=mainnet
+      - APP_ENV=alpha
+      - PORT=8080
+      - BLOCKS_INTERVAL=500
+      - MESSAGES_PER_PROCESS=100
+      - ETHEREUM_QUORUM=2

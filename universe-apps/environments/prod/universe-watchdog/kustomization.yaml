@@ -1,0 +1,44 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universe-watchdog
+  - secret.yaml
+patchesStrategicMerge:
+  - patch-ingress.yaml
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-hostname.yaml
+    target:
+      group: networking.k8s.io
+      kind: Ingress
+      name: universe-watchdog
+      version: v1beta1
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universe-watchdog
+      version: v1
+commonLabels:
+  app: backend
+  component: universe-watchdog
+  environment: prod
+configMapGenerator:
+  - name: universe-watchdog
+    literals:
+      - APP_PORT=8080
+      - APP_ENV=prod
+      - DB_DATABASE_NAME=kekdao
+      - DB_HOST=prod-universe.cotqfbtbif7j.us-east-1.rds.amazonaws.com
+      - DB_PORT=5432
+      - DB_USERNAME=kekdao
+      - DB_SSL=false
+      - DB_SYNC=false
+      - DB_MIGRATIONS=true
+      - ALCHEMY_WEBHOOKID=160586
+      - ALCHEMY_WEBHOOKURL=https://dashboard.alchemyapi.io/api/update-webhook-addresses
+      - ALCHEMY_APPID=vvvf695kz1kyzyck
+      - ALCHEMY_NETWORK=eth-mainnet
+      - ALCHEMY_APIKEY=aKHG348dsWB7Iwjvkl61fLUxvO5Wkq22
+      - ALCHEMY_AUTHTOKEN=8GnUCGB3wqzTtQTtz18-QxMO1pAK-rCj
+      - ORDERBOOK_CALLBACKURL=http://marketplace-backend:8080/internal/orders/track
