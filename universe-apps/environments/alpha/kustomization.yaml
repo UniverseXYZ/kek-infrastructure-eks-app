@@ -67,6 +67,6 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-producer
     newTag: "main-d30746a"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer
-    newTag: "main-2d2c91c"
+    newTag: "main-464eed9"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-producer
     newTag: "main-0fc742f"
