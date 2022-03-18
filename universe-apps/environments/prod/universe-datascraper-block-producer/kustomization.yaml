@@ -23,5 +23,5 @@ configMapGenerator:
       - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/prod-datascraper-block.fifo
       - ETHEREUM_NETWORK=mainnet
       - APP_ENV=prod
-      - DEFAULT_START_BLOCK=14269583
+      - DEFAULT_START_BLOCK=4966905 # ERC-721 standard release date
       - ETHEREUM_QUORUM=2

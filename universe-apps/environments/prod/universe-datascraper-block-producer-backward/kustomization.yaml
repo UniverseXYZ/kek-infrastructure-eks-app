@@ -24,6 +24,6 @@ configMapGenerator:
       - ETHEREUM_NETWORK=mainnet
       - APP_ENV=prod
       - ETHEREUM_QUORUM=2
-      - DEFAULT_START_BLOCK=14390000
-      - DEFAULT_END_BLOCK=10000
+      - DEFAULT_START_BLOCK=14413456 #Latest block as of March 18, 2022 7:54pm EST
+      - DEFAULT_END_BLOCK=4966905 #First block from ERC-721 standard release date: 2018-01-24
       - BLOCK_DIRECTION=down

@@ -24,5 +24,5 @@ configMapGenerator:
       - ETHEREUM_NETWORK=mainnet
       - APP_ENV=prod
       - PORT=8080
-      - DEFAULT_START_BLOCK=14390001
+      - DEFAULT_START_BLOCK=14413456 #Latest block as of March 18, 2022 7:54pm EST
       - BLOCK_DELAY=2
