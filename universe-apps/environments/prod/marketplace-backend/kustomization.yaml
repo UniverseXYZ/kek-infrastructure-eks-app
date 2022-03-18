@@ -38,6 +38,6 @@ configMapGenerator:
       - ETHEREUM_NETWORK=mainnet
       - ETHEREUM_CHAIN_ID=1
       - INFURA_PROJECT_ID=25763b5ba15644a8b3079d3ee755bce5
-      - MARKETPLACE_CONTRACT=0x5E20006f3FB9bD7C51A337443d35D182d293914B
-      - SUBGRAPH_ORDERBOOK_ENDPOINT=https://thegraph.com/hosted-service/subgraph/paveldonskikh/orderbookmainnet
+      - MARKETPLACE_CONTRACT=0xB720279a6fc982721771427aA3B6B3a135f81dE3
+      - SUBGRAPH_ORDERBOOK_ENDPOINT=https://thegraph.com/hosted-service/subgraph/universe-xyz/universe-marketplace
       - WATCHDOG_URL=http://universe-watchdog:8080
