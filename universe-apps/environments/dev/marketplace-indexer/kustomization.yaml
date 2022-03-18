@@ -29,4 +29,6 @@ configMapGenerator:
       - DB_SYNC=false
       - DB_MIGRATIONS=true
       - ORDERBOOK_URL=http://marketplace-backend:8080
+      - SUBGRAPH_POLLING_CRON="*/5 * * * * *"
+      - SUBGRAPH_POLLING_NUMBER=10
       - SUBGRAPH_ORDERBOOK_ENDPOINT=https://api.thegraph.com/subgraphs/name/paveldonskikh/orderbookrinkeby
