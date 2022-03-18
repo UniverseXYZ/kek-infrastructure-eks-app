@@ -14,7 +14,7 @@ patchesJson6902:
 commonLabels:
   app: indexer
   component: universe-datascraper-transfer-monitor-producer
-  environment: alpha
+  environment: prod
 configMapGenerator:
   - name: universe-datascraper-transfer-monitor-producer
     literals:
@@ -22,7 +22,7 @@ configMapGenerator:
       - AWS_ACCESS_KEY_ID=AKIARDONMETSDXC2YHRN
       - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/prod-datascraper-transfer-monitor.fifo
       - ETHEREUM_NETWORK=mainnet
-      - APP_ENV=alpha
+      - APP_ENV=prod
       - PORT=8080
       - BLOCKS_INTERVAL=500
       - MESSAGES_PER_PROCESS=100

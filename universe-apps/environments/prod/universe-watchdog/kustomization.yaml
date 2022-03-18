@@ -35,10 +35,8 @@ configMapGenerator:
       - DB_SSL=false
       - DB_SYNC=false
       - DB_MIGRATIONS=true
-      - ALCHEMY_WEBHOOKID=160586
+      - ALCHEMY_WEBHOOKID=161094
       - ALCHEMY_WEBHOOKURL=https://dashboard.alchemyapi.io/api/update-webhook-addresses
-      - ALCHEMY_APPID=vvvf695kz1kyzyck
+      - ALCHEMY_APPID=cki214u2m5v4jok2
       - ALCHEMY_NETWORK=eth-mainnet
-      - ALCHEMY_APIKEY=aKHG348dsWB7Iwjvkl61fLUxvO5Wkq22
-      - ALCHEMY_AUTHTOKEN=8GnUCGB3wqzTtQTtz18-QxMO1pAK-rCj
       - ORDERBOOK_CALLBACKURL=http://marketplace-backend:8080/internal/orders/track
