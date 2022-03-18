@@ -26,3 +26,92 @@ spec:
       kind: Deployment
       name: notifications
       namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universeapp-backend
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: marketplace-backend
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: marketplace-indexer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-watchdog
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-api
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-block-consumer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-block-consumer-backwards
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-block-producer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-block-producer-backwards
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-contract-reader
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-mediafiles-consumer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-mediafiles-producer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-metadata-consumer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-metadata-producer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-monitor-consumer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-monitor-producer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-owners-consumer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-owners-producer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-transfer-consumer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-transfer-producer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-transfer-monitor-consumer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-transfer-monitor-producer
+      namespace: dev
+
