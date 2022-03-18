@@ -42,3 +42,5 @@ configMapGenerator:
       - SUBGRAPH_ORDERBOOK_ENDPOINT=https://api.thegraph.com/subgraphs/name/kunone/orderbook-rinkeby
       - WATCHDOG_URL=http://universe-watchdog:8080
       - ETHEREUM_QUORUM=2
+      - SUBGRAPH_POLLING_CRON="*/5 * * * * *"
+      - SUBGRAPH_POLLING_NUMBER=10
