@@ -39,8 +39,5 @@ configMapGenerator:
       - ETHEREUM_CHAIN_ID=4
       - INFURA_PROJECT_ID=297b8642dc4241aaa4ddada64f3ca089
       - MARKETPLACE_CONTRACT=0xe441c394F917D5a90019C76897458257801ce132
-      - SUBGRAPH_ORDERBOOK_ENDPOINT=https://api.thegraph.com/subgraphs/name/kunone/orderbook-rinkeby
       - WATCHDOG_URL=http://universe-watchdog:8080
       - ETHEREUM_QUORUM=2
-      - SUBGRAPH_POLLING_CRON="*/5 * * * * *"
-      - SUBGRAPH_POLLING_NUMBER=10
