@@ -48,11 +48,11 @@ spec:
       namespace: prod
     - apiVersion: apps/v1
       kind: Deployment
-      name: universe-datascraper-block-consumer-backwards
+      name: universe-datascraper-block-consumer
       namespace: prod
     - apiVersion: apps/v1
       kind: Deployment
-      name: universe-datascraper-block-producer-backwards
+      name: universe-datascraper-block-producer
       namespace: prod
     - apiVersion: apps/v1
       kind: Deployment
