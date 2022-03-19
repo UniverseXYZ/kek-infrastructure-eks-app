@@ -39,3 +39,4 @@ configMapGenerator:
       - ETHEREUM_CHAIN_ID=1
       - MARKETPLACE_CONTRACT=0xB720279a6fc982721771427aA3B6B3a135f81dE3
       - WATCHDOG_URL=http://universe-watchdog:8080
+      - ETHEREUM_QUORUM=2
