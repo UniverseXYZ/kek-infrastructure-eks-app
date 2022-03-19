@@ -26,5 +26,5 @@ configMapGenerator:
       - PORT=8080
       - BLOCKS_INTERVAL=1000
       - MESSAGES_PER_PROCESS=100
-      - END_BLOCK=4966905 #First block from ERC-721 standard release date: 2018-01-24
+      - END_BLOCK=14390000 # all blocks after has already scrapered by monitor flow 
       - ETHEREUM_QUORUM=2
