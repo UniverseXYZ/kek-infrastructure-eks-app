@@ -9,14 +9,14 @@ patchesJson6902:
     target:
       group: apps
       kind: Deployment
-      name: universe-datascraper-block-producer
+      name: universe-datascraper-block-producer-backwards
       version: v1
 commonLabels:
   app: indexer
-  component: universe-datascraper-block-producer
+  component: universe-datascraper-block-producer-backwards
   environment: prod
 configMapGenerator:
-  - name: universe-datascraper-block-producer
+  - name: universe-datascraper-block-producer-backwards
     literals:
       - AWS_REGION=us-east-1
       - AWS_ACCESS_KEY_ID=AKIARDONMETSDXC2YHRN
