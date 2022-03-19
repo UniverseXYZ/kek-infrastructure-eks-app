@@ -47,5 +47,5 @@ spec:
         resources:
           requests:
             cpu: 500m
-            memory: 256Mi
+            memory: 2548Mi
       serviceAccountName: default
