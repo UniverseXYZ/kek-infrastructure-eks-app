@@ -1,0 +1,26 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universe-datascraper-contract-reader
+patchesStrategicMerge:
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universe-datascraper-contract-reader
+      version: v1
+commonLabels:
+  app: indexer
+  component: universe-datascraper-contract-reader
+  environment: prod
+configMapGenerator:
+  - name: universe-datascraper-contract-reader
+    literals:
+      - ETHEREUM_NETWORK=mainnet
+      - APP_ENV=prod
+      - PORT=8080
+      - ETHERSCAN_API_KEY=YNV3U5WEKNYXI2TV817118XH9MCC91ZKI2
+      - RECENT_BLOCK_GAP=100000000
+      - ETHEREUM_QUORUM=2

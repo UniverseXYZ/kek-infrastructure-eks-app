@@ -11,8 +11,63 @@ resources:
   - postgres-proxy
   - scrape
   - universeapp-backend
+  - documentdb-proxy
+  - marketplace-backend
+  - marketplace-indexer
+  - universe-watchdog
+  - universe-datascraper-api
+  - universe-datascraper-mediafiles-consumer
+  - universe-datascraper-mediafiles-producer
+  - universe-datascraper-metadata-consumer
+  - universe-datascraper-metadata-producer
+  - universe-datascraper-transfer-consumer
+  - universe-datascraper-transfer-producer
+  - universe-datascraper-block-consumer
+  - universe-datascraper-block-producer
+  - universe-datascraper-contract-reader
+  - universe-datascraper-transfer-monitor-consumer
+  - universe-datascraper-transfer-monitor-producer
+  - universe-datascraper-owners-consumer
+  - universe-datascraper-owners-producer
+  - universe-datascraper-monitor-consumer
+  - universe-datascraper-monitor-producer
+  
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: "962fe4f"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
     newTag: "3bf4d97"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
+    newTag: "main-25a90ca"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
+    newTag: "main-d2c4521"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
+    newTag: "e94c154"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
+    newTag: "main-44299a5"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
+    newTag: "main-7cc3176"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
+    newTag: "main-4640a09"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
+    newTag: "main-3d3c02e"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
+    newTag: "main-8e79130"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer
+    newTag: "main-57024dd"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer
+    newTag: "main-8a76145"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-block-consumer
+    newTag: "main-c8214a9"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-block-producer
+    newTag: "main-1b32d47"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-contract-reader
+    newTag: "main-59a7936"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-consumer
+    newTag: "main-3cdeebe"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-producer
+    newTag: "main-d30746a"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer
+    newTag: "main-464eed9"
+  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-producer
+    newTag: "main-0fc742f"
