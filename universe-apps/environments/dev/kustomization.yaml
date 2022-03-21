@@ -42,13 +42,13 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
     newTag: "dev-5b84b2c"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
-    newTag: "main-a77cf09"
+    newTag: "main-b789083"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
     newTag: "main-3223d9d"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
     newTag: "e94c154"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
-    newTag: "main-44299a5"
+    newTag: "main-ff59494"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
     newTag: "main-7cc3176"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
