@@ -25,10 +25,11 @@ resources:
   - universe-datascraper-block-consumer
   - universe-datascraper-block-producer
   - universe-datascraper-contract-reader
-  - universe-datascraper-owners-consumer
-  - universe-datascraper-owners-producer
   - universe-datascraper-monitor-consumer
   - universe-datascraper-monitor-producer
+  # To enable when 1155 support is enabled
+  #- universe-datascraper-owners-consumer
+  #- universe-datascraper-owners-producer
   
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
@@ -36,9 +37,9 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
     newTag: "3bf4d97"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
-    newTag: "main-25a90ca"
+    newTag: "main-a77cf09"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
-    newTag: "main-d2c4521"
+    newTag: "main-3223d9d"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
     newTag: "e94c154"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
@@ -46,7 +47,7 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
     newTag: "main-7cc3176"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
-    newTag: "main-4640a09"
+    newTag: "main-00122f6"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
     newTag: "main-3d3c02e"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
@@ -64,7 +65,7 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-consumer
     newTag: "main-3cdeebe"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-producer
-    newTag: "main-d30746a"
+    newTag: "main-e4125b8"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer
     newTag: "main-464eed9"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-producer
