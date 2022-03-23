@@ -35,7 +35,7 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: "962fe4f"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
-    newTag: "8a7441a"
+    newTag: "5c8b8c3"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
     newTag: "main-aa3ced9"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
@@ -43,7 +43,7 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
     newTag: "38f8fd3"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
-    newTag: "main-44299a5"
+    newTag: "main-129f52c"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
     newTag: "main-7cc3176"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
