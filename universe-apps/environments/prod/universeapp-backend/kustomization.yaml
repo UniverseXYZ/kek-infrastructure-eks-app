@@ -35,6 +35,7 @@ configMapGenerator:
       - DB_PORT=5432
       - DB_USERNAME=kekdao
       - ETHEREUM_NETWORK=mainnet
+      - ETHEREUM_QUORUM=2
       - INFURA_PROJECT_ID=25763b5ba15644a8b3079d3ee755bce5
       - MORALIS_APPLICATION_ID=hFeAPH7ekcpBDOG53RSfXc0xOYQVgvpSC7YbFvcT
       - MORALIS_SERVER_URL=https://nn01fvs7mtis.usemoralis.com:2053/server
