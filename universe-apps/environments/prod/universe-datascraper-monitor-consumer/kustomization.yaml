@@ -24,4 +24,4 @@ configMapGenerator:
       - ETHEREUM_NETWORK=mainnet
       - APP_ENV=prod
       - PORT=8080
-      - ETHEREUM_QUORUM=1
+      - ETHEREUM_QUORUM=2
