@@ -46,3 +46,4 @@ configMapGenerator:
       - KD_REDIS_PASSWORD=23gVCVuoA9
       - API_SECRET=d9729feb74992cc3482b350163a1a010 #Used to send calls to the universe moralis api endpoint
       - GOOGLE_SENDER_EMAIL=noreply@universe.xyz
+      - REPORT_VIOLATIONS_EMAIL=reports@universe.xyz
