@@ -45,4 +45,5 @@ configMapGenerator:
       - GOOGLE_SENDER_EMAIL=noreply@universe.xyz
       - REPORT_VIOLATIONS_EMAIL=reports@universe.xyz
       - ETHEREUM_QUORUM=2
+      - COLLECTION_EDIT_ADDRESS=0x5473580406D12E1cBD4c00B77e158FfF0CE9424e
 
