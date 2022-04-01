@@ -18,6 +18,10 @@ resources:
   - universe-watchdog
   - documentdb-proxy
   - universe-datascraper-api
+  - universe-datascraper-mediafiles-monitor-consumer
+  - universe-datascraper-mediafiles-monitor-producer
+  - universe-datascraper-metadata-monitor-consumer
+  - universe-datascraper-metadata-monitor-producer
   - universe-datascraper-mediafiles-consumer
   - universe-datascraper-mediafiles-producer
   - universe-datascraper-metadata-consumer
@@ -52,11 +56,11 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
     newTag: "universe-marketplace-v1.0.1-6e85cc1"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
-    newTag: "universe-marketplace-v1.0.1-a44c310"
+    newTag: "main-cfd2307"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
     newTag: "universe-marketplace-v1.0.1-6ce19a4"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
-    newTag: "universe-marketplace-v1.0.1-65ae5ca"
+    newTag: "main-4128dda"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer
     newTag: "universe-marketplace-v1.0.1-1bd2006"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer
