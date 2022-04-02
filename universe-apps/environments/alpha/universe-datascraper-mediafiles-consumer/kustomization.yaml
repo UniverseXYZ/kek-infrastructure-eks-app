@@ -27,7 +27,5 @@ configMapGenerator:
       - MODEL_BUCKET=universe-dev-datascraper-models
       - MISC_BUCKET=universe-dev-datascraper-misc
       - ETHEREUM_NETWORK=mainnet
-      - INFURA_PROJECT_ID=a326b79f38544771817120dbcf268b0f
-      - IPFS_GATEWAY=https://graviton.mypinata.cloud/ipfs/
       - APP_ENV=alpha
       - ETHEREUM_QUORUM=2

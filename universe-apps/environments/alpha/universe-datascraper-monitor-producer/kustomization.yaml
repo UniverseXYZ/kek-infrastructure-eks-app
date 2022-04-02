@@ -22,7 +22,6 @@ configMapGenerator:
       - AWS_ACCESS_KEY_ID=AKIARDONMETSALD6H4TH
       - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/datascraper-transfer-monitor.fifo
       - ETHEREUM_NETWORK=mainnet
-      - INFURA_PROJECT_ID=a326b79f38544771817120dbcf268b0f
       - APP_ENV=alpha
       - PORT=8080
       - DEFAULT_START_BLOCK=14390001
