@@ -22,8 +22,6 @@ configMapGenerator:
       - AWS_ACCESS_KEY_ID=AKIARDONMETSJIL57BAC
       - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/rinkeby-datascraper-transfer-monitor.fifo
       - ETHEREUM_NETWORK=rinkeby
-      - INFURA_PROJECT_ID=24dfd27eacf24481819d98036173cfaa
-      - IPFS_GATEWAY=https://graviton.mypinata.cloud/ipfs/
       - APP_ENV=dev
       - PORT=8080
       - BLOCKS_INTERVAL=500
