@@ -25,3 +25,4 @@ configMapGenerator:
       - APP_ENV=dev
       - PORT=8080
       - ETHEREUM_QUORUM=2
+      - SOURCE=ARCHIVE
