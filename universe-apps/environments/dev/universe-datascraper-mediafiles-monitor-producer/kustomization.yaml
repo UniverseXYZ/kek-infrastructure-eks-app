@@ -12,7 +12,7 @@ patchesJson6902:
       name: universe-datascraper-mediafiles-monitor-producer
       version: v1
 commonLabels:
-  app: indexer
+  app: datascraper
   component: universe-datascraper-mediafiles-monitor-producer
   environment: dev
 configMapGenerator:
