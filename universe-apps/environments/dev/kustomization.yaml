@@ -20,8 +20,12 @@ resources:
   - universe-datascraper-api
   - universe-datascraper-mediafiles-consumer
   - universe-datascraper-mediafiles-producer
+  - universe-datascraper-mediafiles-monitor-consumer
+  - universe-datascraper-mediafiles-monitor-producer
   - universe-datascraper-metadata-consumer
   - universe-datascraper-metadata-producer
+  - universe-datascraper-metadata-monitor-consumer
+  - universe-datascraper-metadata-monitor-producer
   - universe-datascraper-transfer-consumer
   - universe-datascraper-transfer-producer
   - universe-datascraper-block-consumer
