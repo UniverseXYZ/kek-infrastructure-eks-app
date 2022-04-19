@@ -11,8 +11,6 @@ resources:
   - postgres-proxy
   - postgres-proxy-nft
   - universeapp-backend
-  - logstash
-  - opensearch-proxy
   - marketplace-backend
   - marketplace-indexer
   - universe-watchdog
