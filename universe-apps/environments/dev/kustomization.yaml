@@ -17,6 +17,7 @@ resources:
   - marketplace-indexer
   - universe-watchdog
   - documentdb-proxy
+  - atlasdb-proxy
   - universe-datascraper-api
   - universe-datascraper-mediafiles-consumer
   - universe-datascraper-mediafiles-producer
