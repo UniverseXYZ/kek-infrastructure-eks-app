@@ -3,4 +3,4 @@ kind: Service
 metadata:
   name: atlasdb-proxy
 spec:
-  externalName: universe-dev-cluster-at.lrbek.mongodb.net
+  externalName: universe-dev-cluster-at-shard-00-00.lrbek.mongodb.net
