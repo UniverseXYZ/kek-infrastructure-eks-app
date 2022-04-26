@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: documentdb-proxy
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+spec:
+  tls:
+    - hosts:
+        - documentdb-proxy.local
+      secretName: documentdb-proxy-tls
+  rules:
+    - host: documentdb-proxy.local
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: documentdb-proxy
+              servicePort: 27017
