@@ -5,6 +5,7 @@ resources:
 patchesStrategicMerge:
   - patch-cmd-args.yaml
   - patch-service.yaml
+  - patch-ingress.yaml
 commonLabels:
   app: backend
   component: documentdb-proxy
