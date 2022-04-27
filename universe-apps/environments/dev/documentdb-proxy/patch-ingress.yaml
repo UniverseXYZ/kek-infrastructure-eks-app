@@ -4,3 +4,4 @@ metadata:
   name: documentdb-proxy
   annotations:
     external-dns.alpha.kubernetes.io/hostname: dev.documentdb-proxy.universe.xyz
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"

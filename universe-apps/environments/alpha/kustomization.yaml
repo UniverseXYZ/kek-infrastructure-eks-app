@@ -30,7 +30,9 @@ resources:
   - universe-datascraper-owners-producer
   - universe-datascraper-monitor-consumer
   - universe-datascraper-monitor-producer
-
+patchesStrategicMerge:
+  - nginx-ingress/patch-tcp.yaml
+  
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
     newTag: "962fe4f"
