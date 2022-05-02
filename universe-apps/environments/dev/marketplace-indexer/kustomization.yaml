@@ -32,4 +32,4 @@ configMapGenerator:
       - SUBGRAPH_POLLING_CRON="*/5 * * * * *"
       - SUBGRAPH_POLLING_NUMBER=10
       - SUBGRAPH_ORDERBOOK_ENDPOINT=https://api.thegraph.com/subgraphs/name/paveldonskikh/orderbookrinkeby
-      - SKIPPING_COUNTER_LIMIT=1
+      - SKIPPING_COUNTER_LIMIT=180
