@@ -45,7 +45,7 @@ images:
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
   newTag: dev-universe-v1.0.5-66aa02c
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
-  newTag: dev-universe-v1.0.4-ffbbb5f
+  newTag: main-095c239
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
   newTag: universe-v1.0.2-005a5fa
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-block-consumer

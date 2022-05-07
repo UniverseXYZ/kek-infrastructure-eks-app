@@ -39,7 +39,7 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
     newTag: "main-899c759"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
-    newTag: "main-ad38401"
+    newTag: "main-095c239"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
     newTag: "38f8fd3"
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
