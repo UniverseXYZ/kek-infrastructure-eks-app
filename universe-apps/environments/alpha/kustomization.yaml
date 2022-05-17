@@ -69,4 +69,4 @@ images:
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
   newTag: 38f8fd3
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
-  newTag: 539c3c8
+  newTag: 4e8c3fc
