@@ -49,7 +49,7 @@ images:
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
   newTag: main-697187e
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
-  newTag: main-43c7555
+  newTag: main-d31c23e
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
   newTag: main-3b32b34
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
@@ -61,7 +61,7 @@ images:
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-consumer
   newTag: main-515839b
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-producer
-  newTag: main-dd7427b
+  newTag: main-a8e3e23
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer
   newTag: main-e116be2
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer
