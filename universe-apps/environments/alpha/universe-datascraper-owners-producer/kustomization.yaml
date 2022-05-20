@@ -27,3 +27,4 @@ configMapGenerator:
       - MESSAGES_PER_PROCESS=10
       - TOKEN_TYPE=ERC721
       - SKIPPING_COUNTER_LIMIT=240
+      - MONGODB_URI=mongodb+srv://alpha-db-account:KXy1IPx5N2wKLJSU@universe-alpha-cluster.jnoczua.mongodb.net/?retryWrites=true&w=majority

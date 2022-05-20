@@ -29,3 +29,4 @@ configMapGenerator:
       - PORT=8080
       - SESSION_SECRET=XYZDAO
       - APP_ENV=alpha
+      - MONGODB_URI=mongodb://kekdao:XVN9piUw9xnJswFf7whmKHyT@universe-dev.cluster-cotqfbtbif7j.us-east-1.docdb.amazonaws.com:27017/alpha-universe-datascraper?authSource=admin&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false&directConnection=true&ssl=false
