@@ -29,4 +29,4 @@ configMapGenerator:
       - ETHEREUM_NETWORK=mainnet
       - APP_ENV=alpha
       - ETHEREUM_QUORUM=2
-      - MONGODB_URI=mongodb+srv://alpha-db-account:KXy1IPx5N2wKLJSU@universe-alpha-cluster.jnoczua.mongodb.net/?retryWrites=true&w=majority
+      - MONGODB_URI=mongodb+srv://alpha-db-account:KXy1IPx5N2wKLJSU@universe-alpha-cluster.jnoczua.mongodb.net/alpha-universe-datascraper?retryWrites=true&w=majority
