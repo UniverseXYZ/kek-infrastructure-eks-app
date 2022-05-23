@@ -63,7 +63,7 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
     newTag: main-8acff25
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer
-    newTag: universe-marketplace-v1.1.0-120a986
+    newTag: universe-marketplace-v1.1.0-eadcf1e
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-producer
     newTag: universe-marketplace-v1.1.0-d7aaaf7
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-consumer
