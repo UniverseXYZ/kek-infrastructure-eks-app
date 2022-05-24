@@ -19,9 +19,9 @@ configMapGenerator:
   - name: universe-datascraper-contract-reader
     literals:
       - ETHEREUM_NETWORK=rinkeby
-      - INFURA_PROJECT_ID=24dfd27eacf24481819d98036173cfaa
       - APP_ENV=dev
       - PORT=8080
       - ETHERSCAN_API_KEY=XW34D32UMKX17RAESAADSRSAVY58U9EMD7
       - RECENT_BLOCK_GAP=100
       - ETHEREUM_QUORUM=2
+      - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority

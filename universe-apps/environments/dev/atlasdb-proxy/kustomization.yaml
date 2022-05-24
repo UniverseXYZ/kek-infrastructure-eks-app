@@ -1,12 +1,11 @@
 apiversion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - deployment.yaml
-  - service.yaml
+  - ../../../base/atlasdb-proxy
 patchesStrategicMerge:
   - patch-cmd-args.yaml
   - patch-service.yaml
 commonLabels:
   app: backend
-  component: opensearch-proxy
+  component: atlasdb-proxy
   environment: dev

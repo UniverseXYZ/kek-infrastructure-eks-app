@@ -1,0 +1,29 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../../base/universe-datascraper-metadata-monitor-consumer
+patchesStrategicMerge:
+  - patch-affinity.yaml
+patchesJson6902:
+  - path: patch-replicas.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: universe-datascraper-metadata-monitor-consumer
+      version: v1
+commonLabels:
+  app: datascraper
+  component: universe-datascraper-metadata-monitor-consumer
+  environment: dev
+configMapGenerator:
+  - name: universe-datascraper-metadata-monitor-consumer
+    literals:
+      - AWS_REGION=us-east-1
+      - AWS_ACCESS_KEY_ID=AKIARDONMETSJIL57BAC
+      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/rinkeby-datascraper-token-monitor.fifo
+      - ETHEREUM_NETWORK=rinkeby
+      - SPECIAL_CASES_OPEN_SEA_1155_URI=https://api.opensea.io/api/v1/metadata
+      - APP_ENV=dev
+      - PORT=8080
+      - ETHEREUM_QUORUM=2
+      - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority

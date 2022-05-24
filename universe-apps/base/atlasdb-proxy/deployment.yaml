@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: opensearch-proxy
+  name: atlasdb-proxy
 spec:
   replicas: 1
   template:
     spec:
       containers:
       - name: proxy
-        image: gcr.io/google_containers/proxy-to-service:v1
+        image: gcr.io/google_containers/proxy-to-service:v2
         ports:
-        - name: opensearch
+        - name: atlasdb
           protocol: TCP
-          containerPort: 443
+          containerPort: 27017
       serviceAccount: default

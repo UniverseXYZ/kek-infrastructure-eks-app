@@ -4,3 +4,7 @@ metadata:
   name: documentdb-proxy
 spec:
   type: ExternalName
+  ports:
+  - port: 27017
+    protocol: TCP
+    targetPort: 27017

@@ -37,7 +37,6 @@ configMapGenerator:
       - DB_MIGRATIONS=true
       - ETHEREUM_NETWORK=rinkeby
       - ETHEREUM_CHAIN_ID=4
-      - INFURA_PROJECT_ID=297b8642dc4241aaa4ddada64f3ca089
       - MARKETPLACE_CONTRACT=0xe441c394F917D5a90019C76897458257801ce132
       - WATCHDOG_URL=http://universe-watchdog:8080
       - ETHEREUM_QUORUM=2

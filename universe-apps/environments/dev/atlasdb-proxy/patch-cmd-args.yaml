@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: opensearch-proxy
+  name: atlasdb-proxy
 spec:
   template:
     spec:
       containers:
       - name: proxy
-        args: ["tcp", "443", "opensearch-proxy.dev"]
+        args: ["tcp", "27017", "atlasdb-proxy.dev"]

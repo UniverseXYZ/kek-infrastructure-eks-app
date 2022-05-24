@@ -1,0 +1,7 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: documentdb-proxy
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: alpha.documentdb-proxy.universe.xyz
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
