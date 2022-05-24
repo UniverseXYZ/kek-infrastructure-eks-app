@@ -24,3 +24,4 @@ configMapGenerator:
       - ETHEREUM_NETWORK=mainnet
       - APP_ENV=alpha
       - PORT=8080
+      - MONGODB_URI=mongodb+srv://alpha-db-account:KXy1IPx5N2wKLJSU@universe-alpha-cluster.jnoczua.mongodb.net/alpha-universe-datascraper?retryWrites=true&w=majority
