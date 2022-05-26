@@ -52,15 +52,7 @@ spec:
       namespace: dev
     - apiVersion: apps/v1
       kind: Deployment
-      name: universe-datascraper-block-consumer-backwards
-      namespace: dev
-    - apiVersion: apps/v1
-      kind: Deployment
       name: universe-datascraper-block-producer
-      namespace: dev
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: universe-datascraper-block-producer-backwards
       namespace: dev
     - apiVersion: apps/v1
       kind: Deployment
@@ -106,12 +98,3 @@ spec:
       kind: Deployment
       name: universe-datascraper-transfer-producer
       namespace: dev
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: universe-datascraper-transfer-monitor-consumer
-      namespace: dev
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: universe-datascraper-transfer-monitor-producer
-      namespace: dev
-
