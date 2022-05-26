@@ -24,3 +24,4 @@ configMapGenerator:
       - ETHEREUM_NETWORK=mainnet
       - APP_ENV=prod
       - ETHEREUM_QUORUM=2
+      - SQS_BUCKET=universe-prod-datascraper-sqs

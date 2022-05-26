@@ -26,6 +26,7 @@ configMapGenerator:
       - AUDIO_BUCKET=universe-prod-datascraper-audio
       - MODEL_BUCKET=universe-prod-datascraper-models
       - MISC_BUCKET=universe-prod-datascraper-misc
+      - SQS_BUCKET=universe-prod-datascraper-sqs
       - ETHEREUM_NETWORK=mainnet
       - APP_ENV=prod
       - ETHEREUM_QUORUM=2

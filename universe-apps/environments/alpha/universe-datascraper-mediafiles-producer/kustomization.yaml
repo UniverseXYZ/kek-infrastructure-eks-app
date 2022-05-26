@@ -26,3 +26,4 @@ configMapGenerator:
       - ETHEREUM_QUORUM=2
       - SOURCE=MONITOR
       - MONGODB_URI=mongodb+srv://alpha-db-account:KXy1IPx5N2wKLJSU@universe-alpha-cluster.jnoczua.mongodb.net/alpha-universe-datascraper?retryWrites=true&w=majority
+      - SQS_BUCKET=universe-dev-datascraper-sqs  

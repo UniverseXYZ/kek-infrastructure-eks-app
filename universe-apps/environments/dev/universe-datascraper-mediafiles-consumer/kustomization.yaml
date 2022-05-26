@@ -26,6 +26,7 @@ configMapGenerator:
       - AUDIO_BUCKET=universe-rinkeby-datascraper-audio
       - MODEL_BUCKET=universe-rinkeby-datascraper-models
       - MISC_BUCKET=universe-rinkeby-datascraper-misc
+      - SQS_BUCKET=universe-rinkeby-datascraper-sqs
       - ETHEREUM_NETWORK=rinkeby
       - APP_ENV=dev
       - ETHEREUM_QUORUM=2
