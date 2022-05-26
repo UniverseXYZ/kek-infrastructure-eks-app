@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - ../../../base/universe-datascraper-transfer-consumer
 patchesStrategicMerge:
+  - patch-ingress.yaml
   - patch-affinity.yaml
 patchesJson6902:
   - path: patch-replicas.yaml
