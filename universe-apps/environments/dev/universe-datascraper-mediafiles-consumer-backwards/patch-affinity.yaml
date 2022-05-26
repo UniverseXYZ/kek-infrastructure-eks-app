@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: universe-datascraper-mediafiles-consumer
+  name: universe-datascraper-mediafiles-consumer-backwards
 spec:
   template:
     spec:
@@ -15,5 +15,5 @@ spec:
                 - key: component
                   operator: In
                   values:
-                  - universe-datascraper-mediafiles-consumer
+                  - universe-datascraper-mediafiles-consumer-backwards
               topologyKey: topology.kubernetes.io/zone

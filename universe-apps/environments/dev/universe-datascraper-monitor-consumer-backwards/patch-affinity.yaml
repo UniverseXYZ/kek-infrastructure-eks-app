@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: universe-datascraper-monitor-consumer
+  name: universe-datascraper-monitor-consumer-backwards
 spec:
   template:
     spec:
@@ -15,5 +15,5 @@ spec:
                 - key: component
                   operator: In
                   values:
-                  - universe-datascraper-monitor-consumer
+                  - universe-datascraper-monitor-consumer-backwards
               topologyKey: topology.kubernetes.io/zone
