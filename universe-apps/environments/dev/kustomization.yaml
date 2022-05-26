@@ -19,21 +19,19 @@ resources:
   - universe-datascraper-api
   - universe-datascraper-mediafiles-consumer
   - universe-datascraper-mediafiles-producer
-  - universe-datascraper-mediafiles-monitor-consumer
-  - universe-datascraper-mediafiles-monitor-producer
+  - universe-datascraper-mediafiles-consumer-backwards
+  - universe-datascraper-mediafiles-producer-backwards
   - universe-datascraper-metadata-consumer
   - universe-datascraper-metadata-producer
-  - universe-datascraper-metadata-monitor-consumer
-  - universe-datascraper-metadata-monitor-producer
+  - universe-datascraper-metadata-consumer-backwards
+  - universe-datascraper-metadata-producer-backwards
   - universe-datascraper-transfer-consumer
   - universe-datascraper-transfer-producer
-  - universe-datascraper-block-consumer
-  - universe-datascraper-block-producer
   - universe-datascraper-block-consumer-backwards
   - universe-datascraper-block-producer-backwards
   - universe-datascraper-contract-reader
-  - universe-datascraper-transfer-monitor-consumer
-  - universe-datascraper-transfer-monitor-producer
+  - universe-datascraper-transfer-consumer-backwards
+  - universe-datascraper-transfer-producer-backwards
   - universe-datascraper-owners-consumer
   - universe-datascraper-owners-producer
   - universe-datascraper-monitor-consumer
