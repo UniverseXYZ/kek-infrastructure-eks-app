@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../../base/universe-datascraper-monitor-producer
+  - ../../../base/universe-datascraper-monitor-producer-backwards
 patchesStrategicMerge:
   - patch-affinity.yaml
 patchesJson6902:
@@ -9,22 +9,23 @@ patchesJson6902:
     target:
       group: apps
       kind: Deployment
-      name: universe-datascraper-monitor-producer
+      name: universe-datascraper-monitor-producer-backwards
       version: v1
 commonLabels:
   app: indexer
-  component: universe-datascraper-monitor-producer
+  component: universe-datascraper-monitor-producer-backwards
   environment: dev
 configMapGenerator:
-  - name: universe-datascraper-monitor-producer
+  - name: universe-datascraper-monitor-producer-backwards
     literals:
       - AWS_REGION=us-east-1
       - AWS_ACCESS_KEY_ID=AKIARDONMETSJIL57BAC
-      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/rinkeby-datascraper-transfer-monitor.fifo
+      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/rinkeby-datascraper-transfer-monitor-backwards.fifo
       - ETHEREUM_NETWORK=rinkeby
       - APP_ENV=dev
       - PORT=8080
       - DEFAULT_START_BLOCK=10313930
       - BLOCK_DELAY=2
       - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority
-      - SOURCE=MONITOR
+      - DEFAULT_END_BLOCK=0
+      - SOURCE=ARCHIVE
