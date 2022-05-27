@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: main
-        image: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer-backwards:main-a6da80c
+        image: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer:main-a6da80c
         imagePullPolicy: Always
         envFrom:
           - configMapRef:

@@ -31,7 +31,9 @@ resources:
   - universe-datascraper-owners-consumer
   - universe-datascraper-owners-producer
   - universe-datascraper-monitor-consumer
+  - universe-datascraper-monitor-consumer-backwards
   - universe-datascraper-monitor-producer
+  - universe-datascraper-monitor-producer-backwards
 
 images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
