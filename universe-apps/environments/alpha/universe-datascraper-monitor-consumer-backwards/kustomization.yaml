@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../../base/universe-datascraper-monitor-consumer
+  - ../../../base/universe-datascraper-monitor-consumer-backwards
 patchesStrategicMerge:
   - patch-affinity.yaml
 patchesJson6902:
@@ -9,22 +9,22 @@ patchesJson6902:
     target:
       group: apps
       kind: Deployment
-      name: universe-datascraper-monitor-consumer
+      name: universe-datascraper-monitor-consumer-backwards
       version: v1
 commonLabels:
   app: indexer
-  component: universe-datascraper-monitor-consumer
+  component: universe-datascraper-monitor-consumer-backwards
   environment: alpha
 configMapGenerator:
-  - name: universe-datascraper-monitor-consumer
+  - name: universe-datascraper-monitor-consumer-backwards
     literals:
       - AWS_REGION=us-east-1
       - AWS_ACCESS_KEY_ID=AKIARDONMETSALD6H4TH
-      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/datascraper-transfer-monitor.fifo
+      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/datascraper-transfer-monitor-backwards.fifo
       - ETHEREUM_NETWORK=mainnet
       - APP_ENV=alpha
       - PORT=8080
       - ETHEREUM_QUORUM=2
       - MONGODB_URI=mongodb+srv://alpha-db-account:KXy1IPx5N2wKLJSU@universe-alpha-cluster.jnoczua.mongodb.net/alpha-universe-datascraper?retryWrites=true&w=majority
       - BATCH_SIZE=500
-      - SOURCE=MONITOR
+      - SOURCE=ARCHIVE
