@@ -26,6 +26,6 @@ configMapGenerator:
       - PORT=8080
       - DEFAULT_START_BLOCK=10313930
       - BLOCK_DELAY=2
-      - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority
+      - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority&ssl=true
       - DEFAULT_END_BLOCK=3919706
       - SOURCE=ARCHIVE

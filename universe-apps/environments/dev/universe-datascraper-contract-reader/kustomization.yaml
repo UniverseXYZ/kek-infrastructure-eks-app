@@ -24,4 +24,4 @@ configMapGenerator:
       - ETHERSCAN_API_KEY=85SC3SXZZA8PPRNA7NY51ZVSWSVEMPT3NK
       - RECENT_BLOCK_GAP=100
       - ETHEREUM_QUORUM=2
-      - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority
+      - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority&ssl=true
