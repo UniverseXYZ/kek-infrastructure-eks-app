@@ -51,9 +51,9 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer-backwards
     newTag: universe-marketplace-v1.1.0-0dac943
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
-    newTag: main-d31c23e
+    newTag: universe-marketplace-v1.1.0-80d5888
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer-backwards
-    newTag: main-d31c23e
+    newTag: universe-marketplace-v1.1.0-80d5888
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
     newTag: universe-marketplace-v1.1.0-809884f
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer-backwards
