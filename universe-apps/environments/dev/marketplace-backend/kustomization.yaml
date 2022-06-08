@@ -28,10 +28,6 @@ configMapGenerator:
     literals:
       - APP_PORT=8080
       - APP_ENV=dev
-      - DB_DATABASE_NAME=kekdao
-      - DB_HOST=dev-universe.cotqfbtbif7j.us-east-1.rds.amazonaws.com
-      - DB_PORT=5432
-      - DB_USERNAME=kekdao
       - MONGODB_URI = mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority
       - DB_SSL=false
       - DB_SYNC=false
