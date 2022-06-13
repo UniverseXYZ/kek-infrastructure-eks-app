@@ -27,3 +27,4 @@ configMapGenerator:
       - ETHEREUM_QUORUM=2
       - SOURCE=MONITOR
       - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority&ssl=true
+      - QUERY_LIMIT=1000

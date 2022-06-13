@@ -24,7 +24,7 @@ configMapGenerator:
       - ETHEREUM_NETWORK=rinkeby
       - APP_ENV=dev
       - PORT=8080
-      - DEFAULT_START_BLOCK=10313930
+      - DEFAULT_START_BLOCK=10845534
       - BLOCK_DELAY=2
       - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority&ssl=true
       - SOURCE=MONITOR
