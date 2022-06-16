@@ -38,5 +38,6 @@ configMapGenerator:
       - ETHEREUM_NETWORK=mainnet
       - ETHEREUM_CHAIN_ID=1
       - MARKETPLACE_CONTRACT=0x5E20006f3FB9bD7C51A337443d35D182d293914B
-      - SUBGRAPH_ORDERBOOK_ENDPOINT=https://thegraph.com/hosted-service/subgraph/paveldonskikh/orderbookmainnet
       - WATCHDOG_URL=http://universe-watchdog:8080
+      - ETHEREUM_QUORUM=2
+      - ERC721_BUNDLE_VALUE_LIMIT=20
