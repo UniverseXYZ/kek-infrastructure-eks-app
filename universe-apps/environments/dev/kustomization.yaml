@@ -51,17 +51,17 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer-backwards
     newTag: universe-marketplace-v1.1.0-0dac943
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
-    newTag: universe-marketplace-v1.1.0-c486d8a
+    newTag: universe-marketplace-v1.1.0-70cc713
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer-backwards
-    newTag: universe-marketplace-v1.1.0-c486d8a
+    newTag: universe-marketplace-v1.1.0-70cc713
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
-    newTag: main-4859523
+    newTag: main-8c1a9a6
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer-backwards
-    newTag: main-4859523
+    newTag: main-8c1a9a6
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
-    newTag: main-b30d866
+    newTag: universe-marketplace-v1.1.0-de1b296
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer-backwards
-    newTag: main-b30d866
+    newTag: universe-marketplace-v1.1.0-de1b296
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer
     newTag: universe-marketplace-v1.1.0-33785e8
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer-backwards
