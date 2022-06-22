@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../../base/universe-datascraper-transfer-consumer
+  - ../../../base/universe-datascraper-transfer-producer-backwards
 patchesStrategicMerge:
   - patch-affinity.yaml
 patchesJson6902:
@@ -9,23 +9,26 @@ patchesJson6902:
     target:
       group: apps
       kind: Deployment
-      name: universe-datascraper-transfer-consumer
+      name: universe-datascraper-transfer-producer-backwards
       version: v1
 commonLabels:
   app: indexer
-  component: universe-datascraper-transfer-consumer
+  component: universe-datascraper-transfer-producer-backwards
   environment: dev
 configMapGenerator:
-  - name: universe-datascraper-transfer-consumer
+  - name: universe-datascraper-transfer-producer-backwards
     literals:
       - AWS_REGION=us-east-1
       - AWS_ACCESS_KEY_ID=AKIARDONMETSJIL57BAC
-      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/rinkeby-datascraper-transfer.fifo
+      - AWS_QUEUE_URL=https://sqs.us-east-1.amazonaws.com/076129510628/rinkeby-datascraper-transfer-backwards.fifo
       - ETHEREUM_NETWORK=rinkeby
       - APP_ENV=dev
       - PORT=8080
+      - BLOCKS_INTERVAL=100
+      - MESSAGES_PER_PROCESS=1
       - ETHEREUM_QUORUM=2
       - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority&ssl=true
-      - BATCH_SIZE=500
-      - BLOCKS_INTERVAL=100
-      - SOURCE=MONITOR
+      - QUERY_LIMIT=50
+      - SKIPPING_COUNTER_LIMIT=180
+      - SOURCE=ARCHIVE
+      - END_BLOCK=3919706

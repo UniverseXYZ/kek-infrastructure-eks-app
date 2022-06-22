@@ -96,5 +96,13 @@ spec:
       namespace: dev
     - apiVersion: apps/v1
       kind: Deployment
+      name: universe-datascraper-transfer-consumer-backwards
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
       name: universe-datascraper-transfer-producer
+      namespace: dev
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: universe-datascraper-transfer-producer-backwards
       namespace: dev
