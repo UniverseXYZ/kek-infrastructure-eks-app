@@ -28,6 +28,7 @@ configMapGenerator:
     literals:
       - APP_PORT=8080
       - APP_ENV=dev
+      - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority&ssl=true
       - DB_DATABASE_NAME=kekdao
       - DB_HOST=dev-universe.cotqfbtbif7j.us-east-1.rds.amazonaws.com
       - DB_PORT=5432
@@ -41,4 +42,3 @@ configMapGenerator:
       - WATCHDOG_URL=http://universe-watchdog:8080
       - ETHEREUM_QUORUM=2
       - ERC721_BUNDLE_VALUE_LIMIT=20
-        - MONGODB_URI=mongodb+srv://universe-db-account:y7rYKn6Bw41PbB3E@universe-dev-cluster-at.lrbek.mongodb.net/dev-universe-datascraper?retryWrites=true&w=majority&ssl=true
