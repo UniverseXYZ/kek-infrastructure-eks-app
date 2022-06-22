@@ -31,4 +31,3 @@ configMapGenerator:
       - QUERY_LIMIT=50
       - SKIPPING_COUNTER_LIMIT=180
       - SOURCE=ARCHIVE
-      - END_BLOCK=3919706
