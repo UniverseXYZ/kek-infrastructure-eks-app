@@ -2,89 +2,89 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: dev
 resources:
-  - namespace.yaml
-  - sources
-  - redis
-  - api
-  - scrape
-  - notifications
-  - postgres-proxy
-  - postgres-proxy-nft
-  - universeapp-backend
-  - marketplace-backend
-  - marketplace-indexer
-  - universe-watchdog
-  - documentdb-proxy
-  - atlasdb-proxy
-  - universe-datascraper-api
-  - universe-datascraper-mediafiles-consumer
-  - universe-datascraper-mediafiles-producer
-  - universe-datascraper-mediafiles-consumer-backwards
-  - universe-datascraper-mediafiles-producer-backwards
-  - universe-datascraper-metadata-consumer
-  - universe-datascraper-metadata-producer
-  - universe-datascraper-metadata-consumer-backwards
-  - universe-datascraper-metadata-producer-backwards
-  - universe-datascraper-transfer-consumer
-  - universe-datascraper-transfer-consumer-backwards
-  - universe-datascraper-transfer-producer
-  - universe-datascraper-transfer-producer-backwards
-  - universe-datascraper-contract-reader
-  - universe-datascraper-owners-consumer
-  - universe-datascraper-owners-producer
-  - universe-datascraper-monitor-consumer
-  - universe-datascraper-monitor-consumer-backwards
-  - universe-datascraper-monitor-producer
-  - universe-datascraper-monitor-producer-backwards
+- namespace.yaml
+- sources
+- redis
+- api
+- scrape
+- notifications
+- postgres-proxy
+- postgres-proxy-nft
+- universeapp-backend
+- marketplace-backend
+- marketplace-indexer
+- universe-watchdog
+- documentdb-proxy
+- atlasdb-proxy
+- universe-datascraper-api
+- universe-datascraper-mediafiles-consumer
+- universe-datascraper-mediafiles-producer
+- universe-datascraper-mediafiles-consumer-backwards
+- universe-datascraper-mediafiles-producer-backwards
+- universe-datascraper-metadata-consumer
+- universe-datascraper-metadata-producer
+- universe-datascraper-metadata-consumer-backwards
+- universe-datascraper-metadata-producer-backwards
+- universe-datascraper-transfer-consumer
+- universe-datascraper-transfer-consumer-backwards
+- universe-datascraper-transfer-producer
+- universe-datascraper-transfer-producer-backwards
+- universe-datascraper-contract-reader
+- universe-datascraper-owners-consumer
+- universe-datascraper-owners-producer
+- universe-datascraper-monitor-consumer
+- universe-datascraper-monitor-consumer-backwards
+- universe-datascraper-monitor-producer
+- universe-datascraper-monitor-producer-backwards
 
 images:
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
-    newTag: 962fe4f
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
-    newTag: dev-v1.0.8-ddf69f7
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
-    newTag: main-095c239
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
-    newTag: universe-v1.0.2-005a5fa
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-contract-reader
-    newTag: universe-v1.0.8-278bec1
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
-    newTag: universe-v1.0.8-04d467e
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer-backwards
-    newTag: universe-v1.0.8-04d467e
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
-    newTag: universe-v1.0.8-105c4cc
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer-backwards
-    newTag: universe-v1.0.8-105c4cc
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
-    newTag: universe-v1.0.8-e89d1ce
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer-backwards
-    newTag: universe-v1.0.8-e89d1ce
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
-    newTag: universe-v1.0.8-3f8ba1a
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer-backwards
-    newTag: universe-v1.0.8-3f8ba1a
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer
-    newTag: universe-v1.0.8-85382aa
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer-backwards
-    newTag: universe-v1.0.8-85382aa
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-producer
-    newTag: universe-v1.0.8-ecd22de
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-producer-backwards
-    newTag: universe-v1.0.8-ecd22de
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-consumer
-    newTag: universe-v1.0.8-82974cc
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-producer
-    newTag: universe-v1.0.8-be50792
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer
-    newTag: universe-v1.0.8-98f5ee2
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer-backwards
-    newTag: universe-v1.0.8-98f5ee2
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer
-    newTag: universe-v1.0.8-424e597
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer-backwards
-    newTag: universe-v1.0.8-424e597
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
-    newTag: 38f8fd3
-  - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
-    newTag: universe-v1.0.8-ee3e6ad
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/kekbackend
+  newTag: 962fe4f
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-backend
+  newTag: dev-v1.0.8-72bf75b
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
+  newTag: main-095c239
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
+  newTag: universe-v1.0.2-005a5fa
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-contract-reader
+  newTag: universe-v1.0.8-278bec1
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
+  newTag: universe-v1.0.8-04d467e
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer-backwards
+  newTag: universe-v1.0.8-04d467e
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer
+  newTag: universe-v1.0.8-105c4cc
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-producer-backwards
+  newTag: universe-v1.0.8-105c4cc
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer
+  newTag: universe-v1.0.8-e89d1ce
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-consumer-backwards
+  newTag: universe-v1.0.8-e89d1ce
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer
+  newTag: universe-v1.0.8-3f8ba1a
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-metadata-producer-backwards
+  newTag: universe-v1.0.8-3f8ba1a
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer
+  newTag: universe-v1.0.8-85382aa
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-consumer-backwards
+  newTag: universe-v1.0.8-85382aa
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-producer
+  newTag: universe-v1.0.8-ecd22de
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-monitor-producer-backwards
+  newTag: universe-v1.0.8-ecd22de
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-consumer
+  newTag: universe-v1.0.8-82974cc
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-producer
+  newTag: universe-v1.0.8-be50792
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer
+  newTag: universe-v1.0.8-98f5ee2
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer-backwards
+  newTag: universe-v1.0.8-98f5ee2
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer
+  newTag: universe-v1.0.8-424e597
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer-backwards
+  newTag: universe-v1.0.8-424e597
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
+  newTag: 38f8fd3
+- name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
+  newTag: universe-v1.0.8-ee3e6ad
