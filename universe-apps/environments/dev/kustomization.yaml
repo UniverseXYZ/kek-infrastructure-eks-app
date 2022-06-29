@@ -45,7 +45,7 @@ images:
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
   newTag: main-095c239
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
-  newTag: universe-v1.0.2-005a5fa
+  newTag: dev-universe-v1.0.9-b653333
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-contract-reader
   newTag: universe-v1.0.8-bda673a
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
@@ -85,6 +85,6 @@ images:
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer-backwards
   newTag: universe-v1.0.8-9ccc4b1
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-watchdog
-  newTag: 38f8fd3
+  newTag: dev-universe-v1.0.9-3a28eaa
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universeapp-backend
   newTag: universe-v1.0.8-5716c22
