@@ -77,9 +77,9 @@ images:
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-owners-producer
     newTag: universe-v1.0.8-38f76fd
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer
-    newTag: universe-v1.0.8-a70de3f
+    newTag: universe-v1.0.9-8cc9a9d
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-consumer-backwards
-    newTag: universe-v1.0.8-a70de3f
+    newTag: universe-v1.0.9-8cc9a9d
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer
     newTag: universe-v1.0.8-9ccc4b1
   - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-transfer-producer-backwards
