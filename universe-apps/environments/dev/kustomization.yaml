@@ -45,7 +45,7 @@ images:
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/marketplace-indexer
   newTag: main-095c239
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-api
-  newTag: dev-universe-v1.0.9-b653333
+  newTag: dev-universe-v1.0.9-3-b653333
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-contract-reader
   newTag: universe-v1.0.8-bda673a
 - name: 076129510628.dkr.ecr.us-east-1.amazonaws.com/universe-datascraper-mediafiles-consumer
